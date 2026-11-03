@@ -101,3 +101,6 @@ ningún fichero del repositorio nombra la infraestructura privada.
 - L1 (dueño): «he creado un repo para subir esta app https://github.com/yerbajo/supermarket-ticket-analyzer. Quiero que revises que no existan datos sensibles. genera un readme con el objetivo, la descripción asi como un manual de uso con capturas de pantalla. crea issue, rama y pr hacia main»
 - L2 (dueño, tras la pregunta de licencia): «Solo lo propio: reescribir conectores».
 - L3 (dueño, idioma del README): «Español».
+- L4 (dueño, producto): «renombra la app en vez de "Compras" que sea "Tus tickets de Compra"».
+  El nombre de la app cambia en `<h1>`, `<title>`, el título de FastAPI y los comentarios de
+  cabecera; los rótulos que cuentan compras siguen diciendo «Compras» (`f23a762`).
