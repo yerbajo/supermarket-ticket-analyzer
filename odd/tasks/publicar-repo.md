@@ -88,8 +88,13 @@ Suite completa: `387 passed` antes de añadir la prueba de la demo.
 ### T8 publicación
 
 `origin` = `git@github.com:yerbajo/supermarket-ticket-analyzer.git`. `main` arranca con un único
-commit de importación (el historial del fork no se sube) y el trabajo de documentación va en una
-rama con su PR.
+commit de importación (`d2d1c0c`, commit raíz: el historial del fork no se sube, así que los commits
+antiguos con la IP de la LAN tampoco). Issue [#1](https://github.com/yerbajo/supermarket-ticket-analyzer/issues/1)
+y PR [#2](https://github.com/yerbajo/supermarket-ticket-analyzer/pull/2) desde `docs/readme-publico`.
+
+La verificación independiente del árbol, antes de publicar, encontró un fallo propio: este documento
+repetía la IP y el host que la limpieza acababa de quitar. Corregido en `75014dd`; desde entonces
+ningún fichero del repositorio nombra la infraestructura privada.
 
 ## Log
 
