@@ -1,4 +1,4 @@
-# Compras — analizador de tickets y comparador de precios
+# Tus tickets de Compra — analizador de tickets y comparador de precios
 
 Una aplicación para una sola persona: importa tus tickets de supermercado, te dice en qué se te va
 el dinero y a qué precio está hoy **lo mismo** en otra cadena.

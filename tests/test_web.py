@@ -1,4 +1,4 @@
-"""Offline tests for the Compras web app.
+"""Offline tests for the Tus tickets de Compra web app.
 
 A temporary SQLite database is seeded with ``tickets.store`` and pointed at
 through ``$DB_PATH``; the ticket parser is monkeypatched, so no PDF is ever
@@ -133,6 +133,17 @@ def test_index_has_a_skip_link_and_one_h1(seeded_client):
     assert 'href="#contenido"' in body
     assert 'id="contenido"' in body
     assert _h1_count(body) == 1
+
+
+def test_the_app_name_is_tus_tickets_de_compra(seeded_client):
+    """El nombre de la app, en el <h1> de la portada y en el <title>.
+
+    El rótulo "Compras" de las estadísticas sigue llamándose así: cuenta compras, no nombra la app.
+    """
+    body = seeded_client.get("/").text
+    assert "<h1>Tus tickets de Compra</h1>" in body
+    assert "<title>Tus tickets de Compra</title>" in body
+    assert '<dt class="stat__label">Compras</dt>' in body
 
 
 def test_index_empty_state_says_what_to_do(empty_client):

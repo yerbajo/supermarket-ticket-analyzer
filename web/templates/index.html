@@ -1,14 +1,14 @@
 {% extends "base.html" %}
 {% import "_macros.html" as ui with context %}
 
-{% block title %}Compras{% endblock %}
+{% block title %}Tus tickets de Compra{% endblock %}
 
 {% block content %}
 <div class="page">
   <header class="page-head">
     <div>
-      <h1>Compras</h1>
-      <p class="page-lede">Tus tickets de supermercado, con el desglose de cada compra.</p>
+      <h1>Tus tickets de Compra</h1>
+      <p class="page-lede">El desglose de cada compra y el precio de lo mismo en las otras cadenas.</p>
     </div>
     <a class="btn btn--primary" href="{{ url_for('nuevo_page') }}">Añadir ticket</a>
   </header>
