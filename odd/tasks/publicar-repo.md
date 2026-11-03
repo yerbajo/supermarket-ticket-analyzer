@@ -47,10 +47,12 @@ Sobre los 78 ficheros rastreados por git (`git ls-files`, sin `report/images/`):
   «ATENDIDO POR \<nombre y apellido del personal de tienda\>» y el de Día el número de empleado; el
   nombre y el número se han eliminado. El NIF y la dirección que quedan son del supermercado, datos
   públicos.
-- **Infraestructura privada: encontrada y quitada.** `192.168.1.245`, `dev.albertucho.home`,
-  `/home/alberto/...` aparecían en el `Dockerfile`, `scripts/sincronizar.sh`, `docs/cron.md` y
-  `odd/tasks/compras-web.md`. Ahora el host sale de `COMPRAS_HOST` o de `scripts/host.local`
-  (ignorado), las rutas de casa son `~/...` y los comentarios del contenedor son genéricos.
+- **Infraestructura privada: encontrada y quitada.** La dirección de la LAN, el nombre interno del
+  host y las rutas del directorio personal del dueño aparecían en el `Dockerfile`,
+  `scripts/sincronizar.sh`, `docs/cron.md` y `odd/tasks/compras-web.md`. Ahora el host sale de
+  `COMPRAS_HOST` o de `scripts/host.local` (ignorado), las rutas de casa son `~/...` y los
+  comentarios del contenedor son genéricos. Este documento no repite los valores: publicarlos aquí
+  habría deshecho la limpieza.
 
 ### T3 y T4 — independencia del código heredado
 
