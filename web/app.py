@@ -1,4 +1,4 @@
-"""Compras: server-rendered web app over the SQLite store.
+"""Tus tickets de Compra: server-rendered web app over the SQLite store.
 
 One small app: the purchases list, one purchase's breakdown, and the upload
 form that parses a ticket PDF with :mod:`tickets.parsing`. No auth, no sessions,
@@ -74,7 +74,7 @@ SHOP_TZ = ZoneInfo("Europe/Madrid")
 MONTH_PATTERN = re.compile(r"^\d{4}-(0[1-9]|1[0-2])$")
 
 app = FastAPI(
-    title="Compras",
+    title="Tus tickets de Compra",
     docs_url=None,
     redoc_url=None,
     openapi_url=None,
