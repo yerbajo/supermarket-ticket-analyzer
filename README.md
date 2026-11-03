@@ -72,7 +72,8 @@ ninguna compra real.
   **nunca inventa**. Si la confianza es baja la línea queda sin emparejar y se marca; un alias
   confirmado a mano se guarda y no se vuelve a preguntar.
 - **Sesiones**: Día y MAS necesitan sesión. No hay que pegar cookies: `supermarket/firefox.py` lee
-  las de tu perfil de Firefox, en memoria, y no las escribe en ningún sitio. Día está detrás de
+  las de tu perfil de Firefox (que las guarda sin cifrar), copiando su base de datos a un
+  directorio temporal que se borra al terminar, y sólo devuelve las de la tienda que toca. Día está detrás de
   Akamai y sólo acepta un Chromium con ventana real, así que en un servidor se lanza con
   `xvfb-run -a`.
 
@@ -217,8 +218,9 @@ y `python3 tickets_cli.py <comando> --help` tienen el detalle.
 
 Todo se queda en tu máquina: no hay servidor propio ni cuentas.
 
-- **Cookies**: se leen del perfil de Firefox en el momento de usarlas, se pasan a la sesión HTTP o
-  al navegador y no se imprimen, ni se registran, ni se escriben en disco.
+- **Cookies**: se leen del perfil de Firefox en el momento de usarlas —copiando su base a un
+  directorio temporal que se borra al terminar— y se pasan a la sesión HTTP o al navegador. No se
+  imprimen, no se registran y no se escriben en ningún fichero del proyecto.
 - **Tickets y compras**: la base SQLite (`tickets.db` o la que diga `DB_PATH`).
 - **Lo que no entra en git**: `.gitignore` deja fuera `samples/inbox/` (los PDF), `report/` (bases de
   datos, fotos e informes), `web/screenshots/`, `.env` y `scripts/host.local` (el host al que
