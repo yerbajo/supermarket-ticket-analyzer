@@ -1,0 +1,105 @@
+{
+ "data": {
+  "products": {
+   "total_count": 6,
+   "items": [
+    {
+     "sku": "349380",
+     "name": "Arandanos cristina blue dulce vasito 225 gr",
+     "url_key": "frutas/arandanos-cristina-blue-dulce-vasito-225-gr",
+     "price_range": {
+      "minimum_price": {
+       "final_price": {
+        "value": 3.45,
+        "currency": "EUR"
+       },
+       "regular_price": {
+        "value": 3.45
+       }
+      }
+     }
+    },
+    {
+     "sku": "349983",
+     "name": "Arandanos cubo 500 gr",
+     "url_key": "frutas/arandanos-cubo-500-gr",
+     "price_range": {
+      "minimum_price": {
+       "final_price": {
+        "value": 6.5,
+        "currency": "EUR"
+       },
+       "regular_price": {
+        "value": 6.5
+       }
+      }
+     }
+    },
+    {
+     "sku": "347023",
+     "name": "Mora   tarrina 125gr",
+     "url_key": "frutas/mora-tarrina-125gr",
+     "price_range": {
+      "minimum_price": {
+       "final_price": {
+        "value": 2.49,
+        "currency": "EUR"
+       },
+       "regular_price": {
+        "value": 2.49
+       }
+      }
+     }
+    },
+    {
+     "sku": "349383",
+     "name": "Frambuesa dulce tarrina 170gr",
+     "url_key": "frutas/frambuesa-dulce-tarrina-170gr",
+     "price_range": {
+      "minimum_price": {
+       "final_price": {
+        "value": 2.69,
+        "currency": "EUR"
+       },
+       "regular_price": {
+        "value": 2.69
+       }
+      }
+     }
+    },
+    {
+     "sku": "349766",
+     "name": "Fresa tarrina 500 gr",
+     "url_key": "frutas/fresa-tarrina-500-gr",
+     "price_range": {
+      "minimum_price": {
+       "final_price": {
+        "value": 3.75,
+        "currency": "EUR"
+       },
+       "regular_price": {
+        "value": 3.75
+       }
+      }
+     }
+    },
+    {
+     "sku": "349385",
+     "name": "Duo mixto arandanos-frambuesa bja 250gr",
+     "url_key": "frutas/duo-mixto-arandanos-frambuesa-bja-250gr",
+     "price_range": {
+      "minimum_price": {
+       "final_price": {
+        "value": 3.75,
+        "currency": "EUR"
+       },
+       "regular_price": {
+        "value": 3.75
+       }
+      }
+     }
+    }
+   ]
+  }
+ }
+}

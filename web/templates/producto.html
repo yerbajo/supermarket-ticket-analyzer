@@ -1,0 +1,351 @@
+{% extends "base.html" %}
+{% import "_macros.html" as ui with context %}
+
+{% block title %}{{ producto.name }}{% endblock %}
+
+{% block content %}
+<div class="page">
+  <p class="back"><a href="{{ url_for('index') }}">← Volver a las compras</a></p>
+
+  {% if producto.error %}
+  <div class="alert alert--danger" role="alert">
+    <p class="alert__title">No se pudo completar la acción</p>
+    <p>{{ producto.error }}</p>
+  </div>
+  {% endif %}
+
+  <header class="product-head">
+    {{ ui.product_image(producto, producto.chain, producto.logo, 'md') }}
+    <div class="product-head__text">
+      <h1>{{ producto.name }}</h1>
+      <p class="product-head__meta">
+        <span class="badge">{{ producto.chain }}</span>
+        <span class="badge badge--plain">{{ producto.category }}</span>
+      </p>
+      <dl class="meta">
+        <div class="meta__item">
+          <dt class="meta__label">Precio</dt>
+          <dd class="meta__value meta__value--total amount">{{ producto.price }}</dd>
+        </div>
+        <div class="meta__item">
+          <dt class="meta__label">Precio unidad</dt>
+          <dd class="meta__value amount">{{ producto.unit_price }}</dd>
+        </div>
+        <div class="meta__item">
+          <dt class="meta__label">Fecha de catálogo</dt>
+          <dd class="meta__value">
+            <time datetime="{{ producto.observed_at_iso }}">{{ producto.observed_at or '—' }}</time>
+          </dd>
+        </div>
+        {% if producto.url %}
+        <div class="meta__item">
+          <dt class="meta__label">Tienda</dt>
+          <dd class="meta__value">
+            <a href="{{ producto.url }}" rel="noopener">Ver en {{ producto.chain }}</a>
+          </dd>
+        </div>
+        {% endif %}
+      </dl>
+    </div>
+  </header>
+
+  <section class="panel" aria-labelledby="historial-compras-title">
+    <h2 class="section-title" id="historial-compras-title">Historial de compras</h2>
+    {% if producto.history.has %}
+    <p class="section-lede">Lo que has pagado por este producto en tus tickets.</p>
+
+    <dl class="stats">
+      <div class="stat">
+        <dt class="stat__label">Veces comprado</dt>
+        <dd class="stat__value amount">{{ producto.history.count }}</dd>
+      </div>
+    </dl>
+
+    {% for group in producto.history.groups %}
+    <div class="hist-group">
+      {% if producto.history.groups | length > 1 %}
+      <h3 class="hist-group__title">{{ group.title }}</h3>
+      {% endif %}
+
+      {% if group.change %}
+      <div class="change change--{{ group.change.direction }}">
+        <p class="change__label">Desde tu primera compra{% if group.unit %} en {{ group.unit }}{% endif %}</p>
+        <p class="change__prices amount">
+          <span class="change__price"><time datetime="{{ group.first_iso }}">{{ group.first_date }}</time> {{ group.first_text }}</span>
+          <span class="change__arrow" aria-hidden="true">→</span>
+          <span class="change__price"><time datetime="{{ group.last_iso }}">{{ group.last_date }}</time> {{ group.last_text }}</span>
+        </p>
+        <p class="change__value">
+          <span class="delta delta--{{ group.change.direction }}">
+            <span class="delta__arrow" aria-hidden="true">{{ group.change.arrow }}</span>{{ group.change.text }}
+          </span>
+          <span class="delta__verdict">{{ group.verdict }}</span>
+        </p>
+      </div>
+      {% else %}
+      <p class="muted change__none">Todavía no hay dos precios que comparar, así que no hay variación que calcular.</p>
+      {% endif %}
+
+      <dl class="stats">
+        <div class="stat">
+          <dt class="stat__label">Unidades</dt>
+          <dd class="stat__value amount">{{ group.units_text }}</dd>
+        </div>
+        <div class="stat">
+          <dt class="stat__label">Precio mínimo</dt>
+          <dd class="stat__value amount">{{ group.min_text }}</dd>
+        </div>
+        <div class="stat">
+          <dt class="stat__label">Precio máximo</dt>
+          <dd class="stat__value amount">{{ group.max_text }}</dd>
+        </div>
+        <div class="stat">
+          <dt class="stat__label">Precio medio</dt>
+          <dd class="stat__value amount">{{ group.average_text }}</dd>
+        </div>
+      </dl>
+    </div>
+    {% endfor %}
+
+    {% if producto.history.compare %}
+    <p class="hist-compare">
+      {% if producto.history.compare.comparable %}
+      Lo pagabas a <span class="amount">{{ producto.history.compare.paid }}</span> de media y el precio de
+      catálogo de hoy es <span class="amount">{{ producto.history.compare.current }}</span>
+      (<span class="delta delta--{{ producto.history.compare.direction }}"><span class="delta__arrow" aria-hidden="true">{{ producto.history.compare.arrow }}</span>{{ producto.history.compare.delta_text }}</span>
+      <span class="delta__verdict">{{ producto.history.compare.verdict }}</span>).
+      {% if producto.history.compare.change %}Ese precio de estantería, frente a lo que pagaste la primera vez
+      (<span class="amount">{{ producto.history.compare.first_text }}</span>), está
+      <span class="delta delta--{{ producto.history.compare.change.direction }}"><span class="delta__arrow" aria-hidden="true">{{ producto.history.compare.change.arrow }}</span>{{ producto.history.compare.change.text }}</span>
+      <span class="delta__verdict">{{ producto.history.compare.change_verdict }}</span>.{% endif %}
+      {% else %}
+      Ahora está a <span class="amount">{{ producto.history.compare.current }}</span>.
+      {{ producto.history.compare.note }}
+      {% endif %}
+    </p>
+    {% endif %}
+
+    <div class="table-scroll" tabindex="0" role="region" aria-label="Compras de este producto">
+      <table>
+        <caption class="visually-hidden">Fecha, supermercado, unidades, precio por unidad e importe de cada compra</caption>
+        <thead>
+          <tr>
+            <th scope="col">Fecha</th>
+            <th scope="col">Supermercado</th>
+            <th scope="col" class="num">Unidades</th>
+            <th scope="col" class="num">Precio unidad</th>
+            <th scope="col" class="num">Importe</th>
+            <th scope="col">Compra</th>
+          </tr>
+        </thead>
+        <tbody>
+          {% for row in producto.history.rows %}
+          <tr>
+            <th scope="row"><time datetime="{{ row.iso }}">{{ row.date }}</time></th>
+            <td class="hist-chain">{{ ui.chain_logo(row.chain, row.logo, 'sm') }}<span>{{ row.chain }}</span></td>
+            <td class="num">{{ row.units_text }}</td>
+            <td class="num">{{ row.unit_price }}</td>
+            <td class="num">{{ row.total }}</td>
+            <td><a href="/tickets/{{ row.ticket_id }}" aria-label="Ver ticket del {{ row.date }} en {{ row.chain }}">Ver ticket</a></td>
+          </tr>
+          {% endfor %}
+        </tbody>
+      </table>
+    </div>
+    {% else %}
+    <p class="muted">Todavía no has comprado este producto.</p>
+    {% endif %}
+  </section>
+
+  <section class="panel" aria-labelledby="equivalencias-title">
+    <h2 class="section-title" id="equivalencias-title">El mismo producto en otras cadenas</h2>
+    <p class="section-lede">Comparación por precio unitario. La flecha indica si en esa cadena cuesta menos (↓) o más (↑) que aquí.</p>
+
+    {% if producto.comparables %}
+    <ul class="equiv-list">
+      {% for item in producto.comparables %}
+      <li class="equiv">
+        <div class="equiv__head">
+          {{ ui.product_image(item, item.chain, item.logo, 'sm') }}
+          <span class="equiv__chain">{{ item.chain }}</span>
+        </div>
+        {% if item.matched %}
+        <p class="equiv__name">
+          <a href="/productos/{{ item.product_id }}">{{ item.name }}</a>
+          {% if item.manual %}<span class="badge badge--manual" title="Vínculo hecho a mano">Manual</span>{% endif %}
+        </p>
+        <dl class="equiv__prices">
+          <div class="equiv__price">
+            <dt class="equiv__label">Precio</dt>
+            <dd class="equiv__value amount">{{ item.price }}</dd>
+          </div>
+          <div class="equiv__price">
+            <dt class="equiv__label">Precio unidad</dt>
+            <dd class="equiv__value amount">{{ item.unit_price }}</dd>
+          </div>
+          <div class="equiv__price">
+            <dt class="equiv__label">Diferencia</dt>
+            <dd class="equiv__value amount">
+              {% if item.delta_text %}
+              <span class="delta delta--{{ item.direction }}">
+                <span class="delta__arrow" aria-hidden="true">{{ item.arrow }}</span>
+                {{ item.delta_text }}
+              </span>
+              <span class="delta__verdict">{{ item.verdict }}</span>
+              {% else %}
+              <span class="delta delta--none">{{ item.verdict }}</span>
+              {% endif %}
+            </dd>
+          </div>
+        </dl>
+        {% if item.manual %}
+        <form class="equiv__unlink" method="post" action="/productos/{{ producto.id }}/desvincular">
+          <input type="hidden" name="vinculado" value="{{ item.product_id }}">
+          <button class="btn btn--ghost" type="submit">Quitar vínculo<span class="visually-hidden"> con {{ item.name }} en {{ item.chain }}</span></button>
+        </form>
+        {% endif %}
+        {% else %}
+        <p class="equiv__name equiv__name--none">
+          <span class="amount" aria-hidden="true">—</span>
+          <span class="equiv__reason">Sin equivalente en el catálogo de {{ item.chain }}.</span>
+        </p>
+        {% endif %}
+      </li>
+      {% endfor %}
+    </ul>
+    {% else %}
+    <p class="muted">No hay otras cadenas en el catálogo con las que comparar.</p>
+    {% endif %}
+  </section>
+
+  <section class="panel" aria-labelledby="amazon-title">
+    <h2 class="section-title" id="amazon-title">En Amazon</h2>
+    {% if producto.amazon.offer %}
+    {% set oferta = producto.amazon.offer %}
+    <p class="section-lede">La oferta más barata por unidad que se encontró en Amazon.es. La flecha indica si cuesta menos (↓) o más (↑) que en {{ producto.chain }}.</p>
+    <div class="equiv">
+      <div class="equiv__head">
+        <span class="equiv__chain">Amazon</span>
+        {% if oferta.sponsored %}<span class="badge badge--plain">Patrocinado</span>{% endif %}
+      </div>
+      <p class="equiv__name">
+        <a href="{{ oferta.url }}" rel="noopener">{{ oferta.title }}</a>
+      </p>
+      <dl class="equiv__prices">
+        <div class="equiv__price">
+          <dt class="equiv__label">Precio</dt>
+          <dd class="equiv__value amount">{{ oferta.price }}</dd>
+        </div>
+        <div class="equiv__price">
+          <dt class="equiv__label">Precio unidad (Amazon)</dt>
+          <dd class="equiv__value amount">{{ oferta.unit_price_text }}</dd>
+        </div>
+        <div class="equiv__price">
+          <dt class="equiv__label">En tu unidad</dt>
+          <dd class="equiv__value amount">{{ oferta.unit_price }}</dd>
+        </div>
+        <div class="equiv__price">
+          <dt class="equiv__label">Diferencia</dt>
+          <dd class="equiv__value amount">
+            {% if oferta.delta_text %}
+            <span class="delta delta--{{ oferta.direction }}">
+              <span class="delta__arrow" aria-hidden="true">{{ oferta.arrow }}</span>
+              {{ oferta.delta_text }}
+            </span>
+            <span class="delta__verdict">{{ oferta.verdict }}</span>
+            {% else %}
+            <span class="delta delta--none">{{ oferta.verdict }}</span>
+            {% endif %}
+          </dd>
+        </div>
+      </dl>
+      <p class="equiv__reason">
+        Comprobado en Amazon.es{% if oferta.observed_at %} el {{ oferta.observed_at }}{% endif %}.
+        <a href="{{ oferta.url }}" rel="noopener">Ver en Amazon</a>
+      </p>
+    </div>
+    {% else %}
+    <p class="muted">
+      {% if producto.amazon.count %}Se buscó en Amazon, pero ninguna oferta traía un precio por unidad comparable.{% else %}Todavía no se ha buscado este producto en Amazon.{% endif %}
+    </p>
+    {% endif %}
+  </section>
+
+  <section class="panel" aria-labelledby="vincular-title">
+    <h2 class="section-title" id="vincular-title">Vincular un producto</h2>
+    <p class="section-lede">¿El sistema no encuentra la equivalencia? Búscala en el catálogo y vincúlala a mano. Un vínculo manual manda sobre la coincidencia automática.</p>
+    <form class="link-search" method="get" action="/productos/{{ producto.id }}">
+      <div class="field">
+        <label class="field__label" for="buscar">Buscar en el catálogo</label>
+        <input class="field__input" type="search" id="buscar" name="buscar" value="{{ producto.search.term }}" autocomplete="off" placeholder="p. ej. leche">
+      </div>
+      <div class="field">
+        <label class="field__label" for="cadena">Cadena</label>
+        <select class="field__input" id="cadena" name="cadena">
+          {% for option in producto.search.chains %}
+          <option value="{{ option.value }}"{% if option.value == producto.search.chain %} selected{% endif %}>{{ option.label }}</option>
+          {% endfor %}
+        </select>
+      </div>
+      <button class="btn btn--primary" type="submit">Buscar</button>
+    </form>
+
+    {% if producto.search.term %}
+    {% if producto.search.results %}
+    <ul class="link-results" aria-label="Resultados de la búsqueda">
+      {% for candidate in producto.search.results %}
+      <li class="link-result">
+        {{ ui.product_image(candidate, candidate.chain, candidate.logo, 'sm') }}
+        <a class="link-result__name" href="/productos/{{ candidate.product_id }}">{{ candidate.name }}</a>
+        <span class="badge badge--plain">{{ candidate.chain }}</span>
+        <span class="link-result__price amount">{{ candidate.price }}</span>
+        <span class="link-result__unit amount">{{ candidate.unit_price }}</span>
+        <form method="post" action="/productos/{{ producto.id }}/vincular">
+          <input type="hidden" name="candidato" value="{{ candidate.product_id }}">
+          <button class="btn btn--ghost" type="submit">Vincular<span class="visually-hidden"> {{ candidate.name }} de {{ candidate.chain }}</span></button>
+        </form>
+      </li>
+      {% endfor %}
+    </ul>
+    {% else %}
+    <p class="muted">Ningún producto coincide con «{{ producto.search.term }}».</p>
+    {% endif %}
+    {% endif %}
+  </section>
+
+  {% if producto.own_brand %}
+  <section class="panel" aria-labelledby="marcablanca-title">
+    <h2 class="section-title" id="marcablanca-title">Alternativas de marca blanca</h2>
+    <p class="section-lede">La marca blanca de cada cadena que puede sustituir a {{ producto.own_brand }}.</p>
+
+    {% if producto.own_groups %}
+      {% for group in producto.own_groups %}
+      <div class="brand-group">
+        <h3 class="brand-group__title">
+          {{ ui.chain_logo(group.chain, group.logo) }}
+          <span>{{ group.chain }}</span>
+        </h3>
+        {% if group.alternatives %}
+        <ul class="brand-list">
+          {% for alt in group.alternatives %}
+          <li class="brand-item">
+            {{ ui.product_image(alt, alt.chain, group.logo, 'sm') }}
+            <a class="brand-item__name" href="/productos/{{ alt.product_id }}">{{ alt.name }}</a>
+            <span class="badge badge--plain brand-item__brand">{{ alt.brand }}</span>
+            <span class="brand-item__price amount">{{ alt.price }}</span>
+            <span class="brand-item__unit amount">{{ alt.unit_price }}</span>
+          </li>
+          {% endfor %}
+        </ul>
+        {% else %}
+        <p class="muted">Sin alternativas de marca blanca.</p>
+        {% endif %}
+      </div>
+      {% endfor %}
+    {% else %}
+    <p class="muted">No hay otras cadenas con marca blanca comparable.</p>
+    {% endif %}
+  </section>
+  {% endif %}
+</div>
+{% endblock %}

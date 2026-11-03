@@ -1,0 +1,76 @@
+{% extends "base.html" %}
+{% import "_macros.html" as ui with context %}
+
+{% block title %}Compra en {{ ticket.chain }}{% endblock %}
+
+{% block content %}
+<div class="page">
+  <p class="back"><a href="{{ url_for('index') }}">← Volver a las compras</a></p>
+
+  {% if notice %}
+  <p class="notice" role="status">{{ notice }}</p>
+  {% endif %}
+
+  <header class="ticket-head">
+    {{ ui.chain_logo(ticket.chain, ticket.logo) }}
+    <div class="ticket-head__text">
+      <h1>Compra en {{ ticket.chain }}</h1>
+      <dl class="meta">
+        <div class="meta__item">
+          <dt class="meta__label">Fecha</dt>
+          <dd class="meta__value"><time datetime="{{ ticket.iso }}">{{ ticket.datetime or '—' }}</time></dd>
+        </div>
+        <div class="meta__item">
+          <dt class="meta__label">Ticket</dt>
+          <dd class="meta__value">{{ ticket.ticket_number or '—' }}</dd>
+        </div>
+        <div class="meta__item">
+          <dt class="meta__label">Total</dt>
+          <dd class="meta__value meta__value--total amount">{{ ticket.amount }}</dd>
+        </div>
+      </dl>
+    </div>
+  </header>
+
+  <section class="panel" aria-labelledby="desglose-title">
+    <h2 class="section-title" id="desglose-title">Productos</h2>
+    <div class="table-scroll" tabindex="0" role="region" aria-label="Desglose de productos">
+      <table>
+        <caption class="visually-hidden">Productos, cantidades, precios e importes de esta compra</caption>
+        <thead>
+          <tr>
+            <th scope="col">Producto</th>
+            <th scope="col" class="num">Cantidad</th>
+            <th scope="col" class="num">Precio unidad</th>
+            <th scope="col" class="num">Importe</th>
+            <th scope="col">Catálogo</th>
+          </tr>
+        </thead>
+        <tbody>
+          {% for line in ticket.lines %}
+          <tr>
+            <th scope="row" class="product">
+              {% if line.matched %}
+              <a href="/productos/{{ line.product_id }}">{{ line.raw_text }}</a>
+              {% else %}
+              {{ line.raw_text }}
+              {% endif %}
+            </th>
+            <td class="num">{{ line.quantity }}</td>
+            <td class="num">{{ line.unit_price }}</td>
+            <td class="num">{{ line.total }}</td>
+            <td>
+              {% if line.matched %}
+              <span class="badge badge--ok">En catálogo</span>
+              {% else %}
+              <span class="badge badge--warn">Sin catálogo</span>
+              {% endif %}
+            </td>
+          </tr>
+          {% endfor %}
+        </tbody>
+      </table>
+    </div>
+  </section>
+</div>
+{% endblock %}

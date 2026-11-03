@@ -1,0 +1,59 @@
+{% macro chain_logo(chain, logo, size='') -%}
+  {%- if logo -%}
+  <img class="logo{% if size %} logo--{{ size }}{% endif %}" src="{{ url_for('static', path='logos/' + logo) }}" alt="" width="72" height="44">
+  {%- else -%}
+  <span class="logo logo--text{% if size %} logo--{{ size }}{% endif %}" aria-hidden="true">{{ chain }}</span>
+  {%- endif -%}
+{%- endmacro %}
+
+{#-
+  The picture of a product, when it has been downloaded, and the chain's logo when it has not.
+  MAS publishes no real pictures (every thumbnail is a generic placeholder), so its products
+  always land on the logo: a wrong picture is worse than no picture.
+-#}
+{% macro product_image(product, chain, logo, size='md') -%}
+  {%- set archivo = product.image_file if product and 'image_file' in product.keys() else none -%}
+  {%- if archivo -%}
+  <img class="foto foto--{{ size }}" src="/imagenes/{{ archivo }}" alt="" loading="lazy" width="96" height="96">
+  {%- else -%}
+  <span class="foto foto--{{ size }} foto--vacia" aria-hidden="true">{{ chain_logo(chain, logo, 'sm') }}</span>
+  {%- endif -%}
+{%- endmacro %}
+
+{#-
+  One ranked list of price changes: the name, the chain, the two prices it was
+  computed from, and the change itself. The arrow and the word carry the meaning,
+  so the red/green only backs them up.
+-#}
+{% macro rank_list(title, items, empty) -%}
+<div class="rank">
+  <h3 class="rank__title">{{ title }}</h3>
+  {% if items %}
+  <ul class="rank__list">
+    {% for item in items %}
+    <li>
+      <a class="rank-item" href="/productos/{{ item.product_id }}">
+        <span class="rank-item__head">
+          <span class="rank-item__name">{{ item.name }}</span>
+          <span class="rank-item__chain">{{ item.chain }}</span>
+        </span>
+        <span class="rank-item__prices amount">
+          <span class="rank-item__price"><time datetime="{{ item.first_iso }}">{{ item.first_date }}</time> {{ item.first_text }}</span>
+          <span class="change__arrow" aria-hidden="true">→</span>
+          <span class="rank-item__price"><time datetime="{{ item.last_iso }}">{{ item.last_date }}</time> {{ item.last_text }}</span>
+        </span>
+        <span class="rank-item__change">
+          <span class="delta delta--{{ item.change.direction }}">
+            <span class="delta__arrow" aria-hidden="true">{{ item.change.arrow }}</span>{{ item.change.text }}
+          </span>
+          <span class="delta__verdict">{{ item.verdict }}</span>
+        </span>
+      </a>
+    </li>
+    {% endfor %}
+  </ul>
+  {% else %}
+  <p class="muted rank__empty">{{ empty }}</p>
+  {% endif %}
+</div>
+{%- endmacro %}

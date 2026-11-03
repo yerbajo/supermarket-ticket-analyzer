@@ -1,0 +1,183 @@
+{
+ "current_category": "L105",
+ "current_subcategory": {
+  "id": "L2033",
+  "link": "/frutas/platanos-y-bananas/c/L2033",
+  "name": "Plátanos y bananas",
+  "query_id": "1a4c3c173d79d15634d48ebe59b0b3bf",
+  "total_items": 5
+ },
+ "facets": [
+  {
+   "field": "custom_gluten_free",
+   "field_name": "Sin gluten",
+   "filters": [
+    {
+     "count": 73,
+     "enabled": true,
+     "id": "custom_gluten_free:SI:es",
+     "title": "SI"
+    }
+   ],
+   "selected_count": 0
+  },
+  {
+   "field": "dia_brand",
+   "field_name": "Marca Dia",
+   "filters": [
+    {
+     "count": 5,
+     "enabled": true,
+     "id": "dia_brand:true:es",
+     "title": "true"
+    }
+   ],
+   "selected_count": 0
+  }
+ ],
+ "items": [
+  {
+   "average_weight": 180,
+   "display_name": "Banana granel 900 g aprox.",
+   "expiration_days": 0,
+   "image": "/product_images/42070/42070_ISO_0_ES.jpg",
+   "object_id": "42070",
+   "prices": {
+    "currency": "EUR",
+    "discount_percentage": 0,
+    "is_club_price": false,
+    "is_promo_price": false,
+    "measure_unit": "KILO",
+    "price": 1,
+    "price_per_unit": 1.11,
+    "strikethrough_price": 1
+   },
+   "sku_id": "42070",
+   "stamp_code": "3",
+   "stamp_color": "#C8030F",
+   "stamp_description": "Precio destacado",
+   "stamp_text_color": "#FFFFFF",
+   "units_in_cart": 0,
+   "units_in_stock": 564,
+   "url": "/frutas/platanos-y-bananas/p/42070",
+   "weight": 0,
+   "weight_in_grams": 900
+  },
+  {
+   "average_weight": 1000,
+   "display_name": "Plátano de canarias 1 Kg aprox.",
+   "expiration_days": 0,
+   "image": "/product_images/11468/11468_ISO_0_ES.jpg",
+   "object_id": "11468",
+   "prices": {
+    "currency": "EUR",
+    "discount_percentage": 0,
+    "is_club_price": false,
+    "is_promo_price": false,
+    "measure_unit": "KILO",
+    "price": 2.79,
+    "price_per_unit": 2.79,
+    "strikethrough_price": 2.79
+   },
+   "sku_id": "11468",
+   "units_in_cart": 0,
+   "units_in_stock": 270,
+   "url": "/frutas/platanos-y-bananas/p/11468",
+   "weight": 0,
+   "weight_in_grams": 1000
+  },
+  {
+   "average_weight": 850,
+   "brand": "El afortunado",
+   "display_name": "Plátano de Canarias El afortunado 850 g aprox.",
+   "expiration_days": 0,
+   "image": "/product_images/142776/142776_ISO_0_ES.jpg",
+   "object_id": "142776",
+   "prices": {
+    "currency": "EUR",
+    "discount_percentage": 0,
+    "is_club_price": false,
+    "is_promo_price": false,
+    "measure_unit": "KILO",
+    "price": 2.54,
+    "price_per_unit": 2.99,
+    "strikethrough_price": 2.54
+   },
+   "sku_id": "142776",
+   "units_in_cart": 0,
+   "units_in_stock": 223,
+   "url": "/frutas/platanos-y-bananas/p/142776",
+   "weight": 0,
+   "weight_in_grams": 850
+  },
+  {
+   "average_weight": 250,
+   "display_name": "Plátano macho para freír granel 1 Kg aprox.",
+   "expiration_days": 0,
+   "image": "/product_images/53584/53584_ISO_0_ES.jpg",
+   "object_id": "53584",
+   "prices": {
+    "currency": "EUR",
+    "discount_percentage": 0,
+    "is_club_price": false,
+    "is_promo_price": false,
+    "measure_unit": "KILO",
+    "price": 2.89,
+    "price_per_unit": 2.89,
+    "strikethrough_price": 2.89
+   },
+   "sku_id": "53584",
+   "units_in_cart": 0,
+   "units_in_stock": 22,
+   "url": "/frutas/platanos-y-bananas/p/53584",
+   "weight": 0,
+   "weight_in_grams": 1000
+  },
+  {
+   "allergens": [
+    {
+     "name": "BIO"
+    }
+   ],
+   "average_weight": 1000,
+   "display_name": "Plátano bio 1 Kg aprox.",
+   "expiration_days": 0,
+   "image": "/product_images/170563/170563_ISO_0_ES.jpg",
+   "object_id": "170563",
+   "prices": {
+    "currency": "EUR",
+    "discount_percentage": 0,
+    "is_club_price": false,
+    "is_promo_price": false,
+    "measure_unit": "KILO",
+    "price": 3.29,
+    "price_per_unit": 3.29,
+    "strikethrough_price": 3.29
+   },
+   "product_info": "BIO",
+   "sku_id": "170563",
+   "units_in_cart": 0,
+   "units_in_stock": 56,
+   "url": "/frutas/platanos-y-bananas/p/170563",
+   "weight": 0,
+   "weight_in_grams": 1000
+  }
+ ],
+ "locale": "es",
+ "login_status": "ANONYMOUS",
+ "pagination": {
+  "page_number": 1,
+  "page_size": 20,
+  "total_pages": 1,
+  "next_url": "/api/v1/plp-back/l1/all/L105/reduced?category_id=L2032&page=1"
+ },
+ "seo": {
+  "current_category_name": "Frutas",
+  "description": "Frutas",
+  "footer_seo": "En Dia encontrarás toda la fruta que buscas, manzanas, peras, plátanos de Canarias, bananas, naranjas, mandarinas, limones, uva blanca o uva roja sin semillas, frutos rojos, frutas del bosque, mango, piña, kiwi, papaya, coco, melones y sandías Puedes escoger entre formatos a granel o en bolsa. ¡Siempre frescas y listas! o si lo prefieres elije los formatos congelados y siempre tendrás fruta a mano.",
+  "h1": "Frutas",
+  "keywords": "Frutas",
+  "title": "Frutas"
+ },
+ "total_items": 73
+}

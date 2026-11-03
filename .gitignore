@@ -1,0 +1,15 @@
+venv/
+venv.broken/
+.env
+*.db
+*.db-journal
+export/
+report/
+out/
+samples/out/
+samples/inbox/
+web/screenshots/
+__pycache__/
+*.pyc
+.pytest_cache/
+scripts/host.local

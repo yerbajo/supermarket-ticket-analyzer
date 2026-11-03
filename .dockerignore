@@ -1,0 +1,14 @@
+# Kept out of the image build context: local state and artifacts that the container must not
+# carry. The browser, the OCR engine and poppler come from apt inside the Dockerfile.
+.venv/
+.git/
+report/
+samples/
+web/screenshots/
+__pycache__/
+*.pyc
+.pytest_cache/
+*.db
+*.db-journal
+.env
+settings.env

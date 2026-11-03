@@ -1,0 +1,59 @@
+{% extends "base.html" %}
+
+{% block title %}Añadir ticket{% endblock %}
+
+{% block content %}
+<div class="page page--narrow">
+  <p class="back"><a href="{{ url_for('index') }}">← Volver a las compras</a></p>
+
+  <h1>Añadir ticket</h1>
+  <p class="page-lede">Sube el PDF del ticket. Se leerá solo y quedará guardado con su desglose de productos.</p>
+
+  {% if results %}
+  <div class="results" role="alert">
+    <ul class="results__list">
+      {% for result in results %}
+      <li class="result result--{{ 'ok' if result.ok else 'error' }}">
+        <span class="result__tag">{{ 'Importado' if result.ok else 'Error' }}</span>
+        <span>
+          {%- if result.ok -%}
+          {{ result.filename }}{% if not result.inserted %} (ya estaba importado){% endif %} —
+          <a href="/tickets/{{ result.ticket_id }}">ver la compra</a>
+          {%- else -%}
+          {{ result.filename }}: {{ result.message }}
+          {%- endif -%}
+        </span>
+      </li>
+      {% endfor %}
+    </ul>
+  </div>
+  {% endif %}
+
+  {% if error %}
+  <div class="alert alert--danger" role="alert">
+    <p class="alert__title">No se ha importado nada</p>
+    <p>{{ error }}</p>
+  </div>
+  {% endif %}
+
+  <form class="upload" method="post" action="{{ url_for('nuevo_import') }}" enctype="multipart/form-data">
+    <div class="field">
+      <label class="field__label" for="files">Archivos PDF del ticket</label>
+      <input
+        class="field__input"
+        id="files"
+        name="files"
+        type="file"
+        accept="application/pdf,.pdf"
+        multiple
+        required
+        aria-describedby="files-help{% if error %} files-error{% endif %}"
+        {% if error %}aria-invalid="true"{% endif %}
+      >
+      <p class="field__help" id="files-help">Puedes elegir varios archivos a la vez. El envío completo no puede pasar de {{ limit }}.</p>
+      {% if error %}<p class="field__error" id="files-error">{{ error }}</p>{% endif %}
+    </div>
+    <button class="btn btn--primary" type="submit">Importar</button>
+  </form>
+</div>
+{% endblock %}

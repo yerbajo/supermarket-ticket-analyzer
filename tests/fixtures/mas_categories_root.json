@@ -1,0 +1,15 @@
+{"data": {"categories": {"items": [
+ {
+  "uid": "Mg==",
+  "name": "Default Category",
+  "url_path": null,
+  "children": [
+   {"uid": "ODg=", "name": "Alimentación", "url_path": "alimentacion", "children": [
+     {"uid": "NQ==", "name": "Arroz", "url_path": "alimentacion/arroz", "children": []}
+   ]},
+   {"uid": "ODk=", "name": "Lácteos y sustitutivos", "url_path": "lacteos-sustitutivos", "children": []},
+   {"uid": "Njc=", "name": "Carnes y aves", "url_path": "carnes-aves", "children": []},
+   {"uid": "NjA=", "name": "Sherry month", "url_path": "sherry-month", "children": []}
+  ]
+ }
+]}}}

@@ -1,0 +1,2355 @@
+{
+ "data": {
+  "categories": {
+   "items": [
+    {
+     "uid": "Mg==",
+     "name": "Default Category",
+     "url_path": null,
+     "children": [
+      {
+       "uid": "MTQzNA==",
+       "name": "Sherry month",
+       "url_path": "sherry-month",
+       "children": [
+        {
+         "uid": "ODYz",
+         "name": "Jerez, fino y manzanilla",
+         "url_path": "sherry-month/jerez-fino-manzanilla"
+        },
+        {
+         "uid": "ODY1",
+         "name": "Montilla-Moriles",
+         "url_path": "sherry-month/montilla-moriles"
+        },
+        {
+         "uid": "ODUz",
+         "name": "González Byass",
+         "url_path": "sherry-month/gonzalez-byass"
+        }
+       ]
+      },
+      {
+       "uid": "MTQ5OA==",
+       "name": "Vuelta al cole",
+       "url_path": "vuelta-al-cole",
+       "children": []
+      },
+      {
+       "uid": "ODA0",
+       "name": "Novedades",
+       "url_path": "novedades",
+       "children": []
+      },
+      {
+       "uid": "OTI4",
+       "name": "Verano",
+       "url_path": "verano",
+       "children": []
+      },
+      {
+       "uid": "MTMxOA==",
+       "name": "Días de fútbol",
+       "url_path": "dias-de-futbol",
+       "children": []
+      },
+      {
+       "uid": "MTI2Mw==",
+       "name": "Temporada de atún ",
+       "url_path": "atun",
+       "children": []
+      },
+      {
+       "uid": "MTI2MA==",
+       "name": "Temporada de bacalao",
+       "url_path": "bacalao",
+       "children": []
+      },
+      {
+       "uid": "OTU4",
+       "name": "Pescado azul",
+       "url_path": "pescado-azul",
+       "children": []
+      },
+      {
+       "uid": "OTI2",
+       "name": "Especial barbacoa",
+       "url_path": "especial-barbacoa",
+       "children": []
+      },
+      {
+       "uid": "MTEwOA==",
+       "name": "Dulces de Semana Santa",
+       "url_path": "dulces-de-semana-santa",
+       "children": []
+      },
+      {
+       "uid": "Nzc2",
+       "name": "Productos andaluces",
+       "url_path": "productos-andaluces",
+       "children": [
+        {
+         "uid": "Nzc3",
+         "name": "Almería",
+         "url_path": "productos-andaluces/almeria"
+        },
+        {
+         "uid": "Nzc4",
+         "name": "Cádiz",
+         "url_path": "productos-andaluces/cadiz"
+        },
+        {
+         "uid": "Nzc5",
+         "name": "Córdoba",
+         "url_path": "productos-andaluces/cordoba"
+        },
+        {
+         "uid": "Nzgw",
+         "name": "Granada",
+         "url_path": "productos-andaluces/granada"
+        },
+        {
+         "uid": "Nzgx",
+         "name": "Huelva",
+         "url_path": "productos-andaluces/huelva"
+        },
+        {
+         "uid": "Nzgy",
+         "name": "Jaén",
+         "url_path": "productos-andaluces/jaen"
+        },
+        {
+         "uid": "Nzgz",
+         "name": "Málaga",
+         "url_path": "productos-andaluces/malaga"
+        },
+        {
+         "uid": "Nzg0",
+         "name": "Sevilla",
+         "url_path": "productos-andaluces/sevilla"
+        },
+        {
+         "uid": "Nzg1",
+         "name": "Aceites Andaluces",
+         "url_path": "productos-andaluces/aceites"
+        },
+        {
+         "uid": "Nzg5",
+         "name": "Novedades",
+         "url_path": "productos-andaluces/novedades"
+        },
+        {
+         "uid": "OTky",
+         "name": "Aceites Coosur",
+         "url_path": "productos-andaluces/aceites-coosur"
+        },
+        {
+         "uid": "MTAyNQ==",
+         "name": "Aceitunas Pedrereña",
+         "url_path": "productos-andaluces/aceitunas-pedrerena"
+        },
+        {
+         "uid": "MTA0Ng==",
+         "name": "Aceites Andalucía",
+         "url_path": "productos-andaluces/aceites-andalucia"
+        },
+        {
+         "uid": "MTA3MA==",
+         "name": "Aceitunas Pedrereña y la Salud",
+         "url_path": "productos-andaluces/aceitunas-pedrerena-la-salud"
+        },
+        {
+         "uid": "MTA4MA==",
+         "name": "Pastelería y bollería",
+         "url_path": "productos-andaluces/pasteleria-bolleria"
+        },
+        {
+         "uid": "MTA4Mg==",
+         "name": "Cervezas artesanas",
+         "url_path": "productos-andaluces/cervezas-artesanas"
+        },
+        {
+         "uid": "MTA5MQ==",
+         "name": "Aperitivos andaluces",
+         "url_path": "productos-andaluces/aperitivos-andaluces"
+        },
+        {
+         "uid": "MTA5NA==",
+         "name": "Platos preparados",
+         "url_path": "productos-andaluces/platos-preparados"
+        },
+        {
+         "uid": "MTEyOA==",
+         "name": "Especial dulces andaluces",
+         "url_path": "productos-andaluces/especial-dulces-andaluces"
+        }
+       ]
+      },
+      {
+       "uid": "MTI1Mw==",
+       "name": "San Valentín",
+       "url_path": "san-valentin",
+       "children": []
+      },
+      {
+       "uid": "MTM0Mg==",
+       "name": "Feria",
+       "url_path": "feria",
+       "children": []
+      },
+      {
+       "uid": "MTMzNQ==",
+       "name": "Día de la madre",
+       "url_path": "dia-de-la-madre",
+       "children": []
+      },
+      {
+       "uid": "MTAzNw==",
+       "name": "Black Friday",
+       "url_path": "black-friday",
+       "children": [
+        {
+         "uid": "MTIzMw==",
+         "name": "Oferta jamón y paleta",
+         "url_path": "black-friday/oferta-jamon-paleta"
+        }
+       ]
+      },
+      {
+       "uid": "NzI3",
+       "name": "Navidad",
+       "url_path": "navidad",
+       "children": [
+        {
+         "uid": "MTQ2MQ==",
+         "name": "Día de Reyes",
+         "url_path": "navidad/dia-de-reyes"
+        },
+        {
+         "uid": "MTM3OA==",
+         "name": "Fin de año",
+         "url_path": "navidad/fin-de-ano"
+        },
+        {
+         "uid": "MTAyMw==",
+         "name": "Dulces de Navidad",
+         "url_path": "navidad/dulces-de-navidad"
+        },
+        {
+         "uid": "ODQ1",
+         "name": "Especial marisco",
+         "url_path": "navidad/especial-marisco"
+        },
+        {
+         "uid": "Nzkw",
+         "name": "Especial bodega",
+         "url_path": "navidad/productos-de-bodega"
+        },
+        {
+         "uid": "MTAzMg==",
+         "name": "Encargos",
+         "url_path": "navidad/encargos"
+        },
+        {
+         "uid": "MTA0NQ==",
+         "name": "Selección Navidad",
+         "url_path": "navidad/frescos-de-navidad"
+        }
+       ]
+      },
+      {
+       "uid": "MTM3Ng==",
+       "name": "Espumosos ",
+       "url_path": "espumosos",
+       "children": []
+      },
+      {
+       "uid": "MTQ4Mw==",
+       "name": "Seleccion Familia Martin",
+       "url_path": "seleccion-familia-martin",
+       "children": []
+      },
+      {
+       "uid": "MTAwOA==",
+       "name": "Halloween",
+       "url_path": "halloween",
+       "children": []
+      },
+      {
+       "uid": "NDE=",
+       "name": "Frutas",
+       "url_path": "frutas",
+       "children": [
+        {
+         "uid": "NDI=",
+         "name": "Fresas, cerezas y frutos del bosque",
+         "url_path": "frutas/fresas-cerezas-frutos-del-bosque"
+        },
+        {
+         "uid": "NDM=",
+         "name": "Kiwis, piñas y frutas tropicales",
+         "url_path": "frutas/kiwis-pinas-frutas-tropicales"
+        },
+        {
+         "uid": "NDQ=",
+         "name": "Manzanas y peras",
+         "url_path": "frutas/manzanas-peras"
+        },
+        {
+         "uid": "NDU=",
+         "name": "Melocotones, nectarinas y albaricoques",
+         "url_path": "frutas/melocotones-nectarinas-albaricoques"
+        },
+        {
+         "uid": "NDY=",
+         "name": "Melones y sandías",
+         "url_path": "frutas/melones-sandias"
+        },
+        {
+         "uid": "NDc=",
+         "name": "Naranjas, limones y cítricos",
+         "url_path": "frutas/naranjas-limones-citricos"
+        },
+        {
+         "uid": "NDg=",
+         "name": "Plátanos y bananas",
+         "url_path": "frutas/platanos-bananas"
+        },
+        {
+         "uid": "NDk=",
+         "name": "Uvas y ciruelas",
+         "url_path": "frutas/uvas-ciruelas"
+        },
+        {
+         "uid": "NTA=",
+         "name": "Frutas cortadas ",
+         "url_path": "frutas/frutas-cortadas"
+        },
+        {
+         "uid": "NTE=",
+         "name": "Otras frutas",
+         "url_path": "frutas/otras-frutas"
+        }
+       ]
+      },
+      {
+       "uid": "NTI=",
+       "name": "Verduras y hortalizas",
+       "url_path": "verduras-hortalizas",
+       "children": [
+        {
+         "uid": "NTM=",
+         "name": "Acelgas, espinacas y apio",
+         "url_path": "verduras-hortalizas/acelgas-espinacas-apio"
+        },
+        {
+         "uid": "NTQ=",
+         "name": "Alcachofas y espárragos",
+         "url_path": "verduras-hortalizas/alcachofas-esparragos"
+        },
+        {
+         "uid": "NTU=",
+         "name": "Brócoli, coles y coliflores",
+         "url_path": "verduras-hortalizas/brocoli-coles-coliflores"
+        },
+        {
+         "uid": "NTY=",
+         "name": "Calabacines, calabazas y berenjenas",
+         "url_path": "verduras-hortalizas/calabacines-calabazas-berenjenas"
+        },
+        {
+         "uid": "NTc=",
+         "name": "Cebollas, ajos y puerros",
+         "url_path": "verduras-hortalizas/cebollas-ajos-puerros"
+        },
+        {
+         "uid": "NTg=",
+         "name": "Hierbas aromáticas",
+         "url_path": "verduras-hortalizas/hierbas-aromaticas"
+        },
+        {
+         "uid": "NTk=",
+         "name": "Judías, habas y guisantes",
+         "url_path": "verduras-hortalizas/judias-habas-guisantes"
+        },
+        {
+         "uid": "NjA=",
+         "name": "Lechugas y ensaladas",
+         "url_path": "verduras-hortalizas/lechugas-ensaladas"
+        },
+        {
+         "uid": "NjE=",
+         "name": "Patatas y otros tubérculos",
+         "url_path": "verduras-hortalizas/patatas-otros-tuberculos"
+        },
+        {
+         "uid": "NjI=",
+         "name": "Setas y champiñones",
+         "url_path": "verduras-hortalizas/setas-champinones"
+        },
+        {
+         "uid": "NjM=",
+         "name": "Tomates y pimientos",
+         "url_path": "verduras-hortalizas/tomates-pimientos"
+        },
+        {
+         "uid": "NjQ=",
+         "name": "Zanahorias y pepinos",
+         "url_path": "verduras-hortalizas/zanahorias-pepinos"
+        },
+        {
+         "uid": "NjU=",
+         "name": "Verduras cortadas y arreglos",
+         "url_path": "verduras-hortalizas/verduras-cortadas-arreglos"
+        },
+        {
+         "uid": "NjY=",
+         "name": "Otras verduras",
+         "url_path": "verduras-hortalizas/otras-verduras"
+        }
+       ]
+      },
+      {
+       "uid": "Njc=",
+       "name": "Carnes y aves",
+       "url_path": "carnes-aves",
+       "children": [
+        {
+         "uid": "Njg=",
+         "name": "Arreglos ",
+         "url_path": "carnes-aves/arreglos"
+        },
+        {
+         "uid": "Njk=",
+         "name": "Cerdo",
+         "url_path": "carnes-aves/cerdo"
+        },
+        {
+         "uid": "NzI=",
+         "name": "Conejo y otras carnes",
+         "url_path": "carnes-aves/conejo-otras-carnes"
+        },
+        {
+         "uid": "NzM=",
+         "name": "Cordero",
+         "url_path": "carnes-aves/cordero"
+        },
+        {
+         "uid": "NzQ=",
+         "name": "Elaborados",
+         "url_path": "carnes-aves/elaborados"
+        },
+        {
+         "uid": "NzU=",
+         "name": "Embutidos y salchichas frescas",
+         "url_path": "carnes-aves/embutidos-salchichas-frescas"
+        },
+        {
+         "uid": "NzY=",
+         "name": "Hamburguesas, albondigas y carne picada",
+         "url_path": "carnes-aves/hamburguesas-albondigas-carne-picada"
+        },
+        {
+         "uid": "Nzc=",
+         "name": "Pavo y otras aves",
+         "url_path": "carnes-aves/pavo-otras-aves"
+        },
+        {
+         "uid": "Nzg=",
+         "name": "Pollo",
+         "url_path": "carnes-aves/pollo"
+        },
+        {
+         "uid": "Nzk=",
+         "name": "Ternera, añojo y buey",
+         "url_path": "carnes-aves/ternera-anojo-buey"
+        }
+       ]
+      },
+      {
+       "uid": "ODU=",
+       "name": "Pescados y mariscos",
+       "url_path": "pescados-mariscos",
+       "children": [
+        {
+         "uid": "MTQ2Ng==",
+         "name": "Pescado fresco",
+         "url_path": "pescados-mariscos/pescado-fresco"
+        },
+        {
+         "uid": "MTQ2OA==",
+         "name": "Marisco",
+         "url_path": "pescados-mariscos/marisco"
+        },
+        {
+         "uid": "OTk=",
+         "name": "Salazones ahumados y pescado preparado",
+         "url_path": "pescados-mariscos/salazones-ahumados-pescado-preparado"
+        }
+       ]
+      },
+      {
+       "uid": "ODY=",
+       "name": "Charcutería y quesos",
+       "url_path": "charcuteria-quesos",
+       "children": [
+        {
+         "uid": "MTEz",
+         "name": "Asados",
+         "url_path": "charcuteria-quesos/asados"
+        },
+        {
+         "uid": "MTE0",
+         "name": "Cocidos y fiambres",
+         "url_path": "charcuteria-quesos/cocidos-fiambres"
+        },
+        {
+         "uid": "MTE1",
+         "name": "Curados e Ibéricos",
+         "url_path": "charcuteria-quesos/curados-ibericos"
+        },
+        {
+         "uid": "MTE2",
+         "name": "Patés y sobrasada",
+         "url_path": "charcuteria-quesos/pates-sobrasada"
+        },
+        {
+         "uid": "MTE3",
+         "name": "Quesos",
+         "url_path": "charcuteria-quesos/quesos"
+        }
+       ]
+      },
+      {
+       "uid": "ODc=",
+       "name": "Panadería, bollería y pastelería",
+       "url_path": "panaderia-bolleria-pasteleria",
+       "children": [
+        {
+         "uid": "MTQ0",
+         "name": "Horno de pan",
+         "url_path": "panaderia-bolleria-pasteleria/horno-de-pan"
+        },
+        {
+         "uid": "MTUy",
+         "name": "Bollería y pastelería",
+         "url_path": "panaderia-bolleria-pasteleria/bolleria-pasteleria"
+        },
+        {
+         "uid": "MTYx",
+         "name": "Panadería",
+         "url_path": "panaderia-bolleria-pasteleria/panaderia"
+        },
+        {
+         "uid": "MTcw",
+         "name": "Repostería",
+         "url_path": "panaderia-bolleria-pasteleria/reposteria"
+        }
+       ]
+      },
+      {
+       "uid": "ODg=",
+       "name": "Alimentación",
+       "url_path": "alimentacion",
+       "children": [
+        {
+         "uid": "MTc2",
+         "name": "Arroz ",
+         "url_path": "alimentacion/arroz"
+        },
+        {
+         "uid": "MTgy",
+         "name": "Aceites, vinagres, sal y especias",
+         "url_path": "alimentacion/aceites-vinagres-sal-especias"
+        },
+        {
+         "uid": "MTkz",
+         "name": "Aperitivos",
+         "url_path": "alimentacion/aperitivos"
+        },
+        {
+         "uid": "MjAx",
+         "name": "Azúcar y edulcorantes",
+         "url_path": "alimentacion/azucar-edulcorantes"
+        },
+        {
+         "uid": "MjA0",
+         "name": "Café, cacao e infusiones",
+         "url_path": "alimentacion/cafe-cacao-infusiones"
+        },
+        {
+         "uid": "MjE3",
+         "name": "Caldos y purés",
+         "url_path": "alimentacion/caldos-pures"
+        },
+        {
+         "uid": "MjIx",
+         "name": "Caramelos y chicles",
+         "url_path": "alimentacion/caramelos-chicles"
+        },
+        {
+         "uid": "MjI1",
+         "name": "Cereales y galletas",
+         "url_path": "alimentacion/cereales-galletas"
+        },
+        {
+         "uid": "MjM0",
+         "name": "Chocolates y snacks dulces",
+         "url_path": "alimentacion/chocolates-snacks-dulces"
+        },
+        {
+         "uid": "MjQz",
+         "name": "Conservas de pescado y marisco",
+         "url_path": "alimentacion/conservas-de-pescado-marisco"
+        },
+        {
+         "uid": "MjUy",
+         "name": "Conservas vegetales",
+         "url_path": "alimentacion/conservas-vegetales"
+        },
+        {
+         "uid": "MjYx",
+         "name": "Frutos secos",
+         "url_path": "alimentacion/frutos-secos"
+        },
+        {
+         "uid": "Mjcx",
+         "name": "Harinas y levaduras",
+         "url_path": "alimentacion/harinas-levaduras"
+        },
+        {
+         "uid": "Mjc1",
+         "name": "Huevos",
+         "url_path": "alimentacion/huevos"
+        },
+        {
+         "uid": "Mjc5",
+         "name": "Legumbres",
+         "url_path": "alimentacion/legumbres"
+        },
+        {
+         "uid": "Mjg0",
+         "name": "Mermeladas y miel",
+         "url_path": "alimentacion/mermeladas-miel"
+        },
+        {
+         "uid": "Mjg5",
+         "name": "Nutrición y Dietética",
+         "url_path": "alimentacion/nutricion-dietetica"
+        },
+        {
+         "uid": "Mjk0",
+         "name": "Pastas",
+         "url_path": "alimentacion/pastas"
+        },
+        {
+         "uid": "MzAy",
+         "name": "Platos preparados",
+         "url_path": "alimentacion/platos-preparados"
+        },
+        {
+         "uid": "MzE1",
+         "name": "Salsas",
+         "url_path": "alimentacion/salsas"
+        }
+       ]
+      },
+      {
+       "uid": "ODk=",
+       "name": "Lácteos y sustitutivos",
+       "url_path": "lacteos-sustitutivos",
+       "children": [
+        {
+         "uid": "Njc3",
+         "name": "Batidos",
+         "url_path": "lacteos-sustitutivos/batidos"
+        },
+        {
+         "uid": "Njgy",
+         "name": "Bebidas para llevar",
+         "url_path": "lacteos-sustitutivos/bebidas-para-llevar"
+        },
+        {
+         "uid": "Njg2",
+         "name": "Bebidas vegetales",
+         "url_path": "lacteos-sustitutivos/bebidas-vegetales"
+        },
+        {
+         "uid": "Njky",
+         "name": "Horchatas",
+         "url_path": "lacteos-sustitutivos/horchatas"
+        },
+        {
+         "uid": "Njkz",
+         "name": "Leche",
+         "url_path": "lacteos-sustitutivos/leche"
+        },
+        {
+         "uid": "NzAy",
+         "name": "Mantequillas, margarinas y nata",
+         "url_path": "lacteos-sustitutivos/mantequillas-margarinas-nata"
+        },
+        {
+         "uid": "NzA3",
+         "name": "Postres",
+         "url_path": "lacteos-sustitutivos/postres"
+        },
+        {
+         "uid": "NzE0",
+         "name": "Yogures",
+         "url_path": "lacteos-sustitutivos/yogures"
+        }
+       ]
+      },
+      {
+       "uid": "OTA=",
+       "name": "Bebidas",
+       "url_path": "bebidas",
+       "children": [
+        {
+         "uid": "NTkw",
+         "name": "Aguas",
+         "url_path": "bebidas/aguas"
+        },
+        {
+         "uid": "NTk0",
+         "name": "Alcoholes y licores",
+         "url_path": "bebidas/alcoholes-licores"
+        },
+        {
+         "uid": "NjA1",
+         "name": "Cervezas",
+         "url_path": "bebidas/cervezas"
+        },
+        {
+         "uid": "NjEy",
+         "name": "Espumosos",
+         "url_path": "bebidas/espumosos"
+        },
+        {
+         "uid": "NjE3",
+         "name": "Refrescos",
+         "url_path": "bebidas/refrescos"
+        },
+        {
+         "uid": "NjI2",
+         "name": "Sangrías y tintos de verano",
+         "url_path": "bebidas/sangrias-tintos-de-verano"
+        },
+        {
+         "uid": "NjI3",
+         "name": "Vinos blancos",
+         "url_path": "bebidas/vinos-blancos"
+        },
+        {
+         "uid": "NjM5",
+         "name": "Vinos dulces y generosos",
+         "url_path": "bebidas/vinos-dulces-generosos"
+        },
+        {
+         "uid": "NjQ2",
+         "name": "Vinos rosados",
+         "url_path": "bebidas/vinos-rosados"
+        },
+        {
+         "uid": "NjU2",
+         "name": "Vinos tintos",
+         "url_path": "bebidas/vinos-tintos"
+        },
+        {
+         "uid": "Njcw",
+         "name": "Zumos y néctares",
+         "url_path": "bebidas/zumos-nectares"
+        }
+       ]
+      },
+      {
+       "uid": "OTE=",
+       "name": "Congelados y helados",
+       "url_path": "congelados-helados",
+       "children": [
+        {
+         "uid": "NTUx",
+         "name": "Bases y masas congeladas",
+         "url_path": "congelados-helados/bases-masas-congeladas"
+        },
+        {
+         "uid": "NTU1",
+         "name": "Frutas",
+         "url_path": "congelados-helados/frutas"
+        },
+        {
+         "uid": "NTU2",
+         "name": "Helados y postres",
+         "url_path": "congelados-helados/helados-postres"
+        },
+        {
+         "uid": "NTY0",
+         "name": "Hielos",
+         "url_path": "congelados-helados/hielos"
+        },
+        {
+         "uid": "MTQ3Mg==",
+         "name": "Marisco congelado",
+         "url_path": "congelados-helados/marisco-congelado"
+        },
+        {
+         "uid": "NTY1",
+         "name": "Pescado congelado",
+         "url_path": "congelados-helados/pescado-congelado"
+        },
+        {
+         "uid": "NTcx",
+         "name": "Platos preparados",
+         "url_path": "congelados-helados/platos-preparados"
+        },
+        {
+         "uid": "NTgw",
+         "name": "Pizzas y Snacks",
+         "url_path": "congelados-helados/pizzas-snacks"
+        },
+        {
+         "uid": "NTg0",
+         "name": "Verduras y hortalizas",
+         "url_path": "congelados-helados/verduras-hortalizas"
+        }
+       ]
+      },
+      {
+       "uid": "OTY=",
+       "name": "Mascotas",
+       "url_path": "mascotas",
+       "children": [
+        {
+         "uid": "MzQy",
+         "name": "Gatos",
+         "url_path": "mascotas/gatos"
+        },
+        {
+         "uid": "MzQ4",
+         "name": "Perros",
+         "url_path": "mascotas/perros"
+        },
+        {
+         "uid": "MzU0",
+         "name": "Otras mascotas",
+         "url_path": "mascotas/otras-mascotas"
+        }
+       ]
+      },
+      {
+       "uid": "OTI=",
+       "name": "Droguería y limpieza",
+       "url_path": "drogueria-limpieza",
+       "children": [
+        {
+         "uid": "NDgx",
+         "name": "Accesorios de limpieza",
+         "url_path": "drogueria-limpieza/accesorios-de-limpieza"
+        },
+        {
+         "uid": "NDg5",
+         "name": "Ambientadores",
+         "url_path": "drogueria-limpieza/ambientadores"
+        },
+        {
+         "uid": "NDk1",
+         "name": "Bolsas de basura",
+         "url_path": "drogueria-limpieza/bolsas-de-basura"
+        },
+        {
+         "uid": "NDk2",
+         "name": "Conservación de alimentos",
+         "url_path": "drogueria-limpieza/conservacion-preparacion-de-alimentos"
+        },
+        {
+         "uid": "NTAz",
+         "name": "Cuidados del calzado",
+         "url_path": "drogueria-limpieza/cuidados-del-calzado"
+        },
+        {
+         "uid": "NTA4",
+         "name": "Detergentes y suavizantes",
+         "url_path": "drogueria-limpieza/detergentes-suavizantes-para-la-ropa"
+        },
+        {
+         "uid": "NTE2",
+         "name": "Insecticidas",
+         "url_path": "drogueria-limpieza/insecticidas"
+        },
+        {
+         "uid": "NTIz",
+         "name": "Lavavajillas",
+         "url_path": "drogueria-limpieza/lavavajillas"
+        },
+        {
+         "uid": "NTI5",
+         "name": "Limpiadores hogar",
+         "url_path": "drogueria-limpieza/limpiadores-para-el-hogar"
+        },
+        {
+         "uid": "NTQw",
+         "name": "Papel higiénico y celulosa",
+         "url_path": "drogueria-limpieza/papel-higienico-celulosa"
+        },
+        {
+         "uid": "NTQ2",
+         "name": "Tratamientos para la ropa",
+         "url_path": "drogueria-limpieza/tratamientos-para-la-ropa"
+        }
+       ]
+      },
+      {
+       "uid": "OTM=",
+       "name": "Hogar",
+       "url_path": "hogar",
+       "children": [
+        {
+         "uid": "NDYz",
+         "name": "Fiesta y cumpleaños",
+         "url_path": "hogar/articulos-de-fiesta-cumpleanos"
+        },
+        {
+         "uid": "NDY0",
+         "name": "Jardín y piscina",
+         "url_path": "hogar/articulos-de-jardin-piscina"
+        },
+        {
+         "uid": "NDY1",
+         "name": "Barbacoas",
+         "url_path": "hogar/articulos-para-barbacoas"
+        },
+        {
+         "uid": "NDcx",
+         "name": "Electricidad",
+         "url_path": "hogar/pilas-bombillas-articulos-de-electricidad"
+        },
+        {
+         "uid": "NDc2",
+         "name": "Vajillas de un solo uso",
+         "url_path": "hogar/vajillas-de-un-solo-uso"
+        }
+       ]
+      },
+      {
+       "uid": "OTQ=",
+       "name": "Belleza e higiene",
+       "url_path": "belleza-higiene",
+       "children": [
+        {
+         "uid": "Mzgz",
+         "name": "Afeitado y cuidado masculino",
+         "url_path": "belleza-higiene/afeitado-cuidado-masculino"
+        },
+        {
+         "uid": "Mzg4",
+         "name": "Colonias",
+         "url_path": "belleza-higiene/colonias"
+        },
+        {
+         "uid": "Mzky",
+         "name": "Cosmética y maquillaje",
+         "url_path": "belleza-higiene/cosmetica-maquillaje"
+        },
+        {
+         "uid": "NDAw",
+         "name": "Cuidado del cabello",
+         "url_path": "belleza-higiene/cuidado-del-cabello"
+        },
+        {
+         "uid": "NDA4",
+         "name": "Cuidado facial",
+         "url_path": "belleza-higiene/cuidado-facial"
+        },
+        {
+         "uid": "NDE3",
+         "name": "Depilación ",
+         "url_path": "belleza-higiene/depilacion"
+        },
+        {
+         "uid": "NDIy",
+         "name": "Desodorantes",
+         "url_path": "belleza-higiene/desodorantes"
+        },
+        {
+         "uid": "NDI2",
+         "name": "Higiene bucal",
+         "url_path": "belleza-higiene/higiene-bucal"
+        },
+        {
+         "uid": "NDMy",
+         "name": "Higiene corporal",
+         "url_path": "belleza-higiene/higiene-corporal"
+        },
+        {
+         "uid": "NDQz",
+         "name": "Higiene íntima",
+         "url_path": "belleza-higiene/higiene-intima"
+        },
+        {
+         "uid": "NDQ5",
+         "name": "Productos solares",
+         "url_path": "belleza-higiene/productos-solares"
+        }
+       ]
+      },
+      {
+       "uid": "OTU=",
+       "name": "Bebé",
+       "url_path": "bebe",
+       "children": [
+        {
+         "uid": "MzU3",
+         "name": "Alimentación infantil",
+         "url_path": "bebe/alimentacion-infantil"
+        },
+        {
+         "uid": "MzY4",
+         "name": "Aseo y cuidado del bebé",
+         "url_path": "bebe/aseo-cuidado-del-bebe"
+        },
+        {
+         "uid": "Mzc2",
+         "name": "Pañales y toallitas",
+         "url_path": "bebe/panales-toallitas"
+        }
+       ]
+      },
+      {
+       "uid": "OTc=",
+       "name": "Parafarmacia",
+       "url_path": "parafarmacia",
+       "children": [
+        {
+         "uid": "MzI3",
+         "name": "Bastoncillos y tapones",
+         "url_path": "parafarmacia/bastoncillos-tapones"
+        },
+        {
+         "uid": "MzI4",
+         "name": "Bienestar sexual",
+         "url_path": "parafarmacia/bienestar-sexual"
+        },
+        {
+         "uid": "MzMx",
+         "name": "Labios",
+         "url_path": "parafarmacia/labios"
+        },
+        {
+         "uid": "MzM0",
+         "name": "Óptica",
+         "url_path": "parafarmacia/optica"
+        },
+        {
+         "uid": "MzM1",
+         "name": "Primeros auxilios",
+         "url_path": "parafarmacia/primeros-auxilios"
+        },
+        {
+         "uid": "MzQx",
+         "name": "Repelentes de insectos y tratamientos",
+         "url_path": "parafarmacia/repelentes-de-insectos-tratamientos"
+        }
+       ]
+      },
+      {
+       "uid": "ODA1",
+       "name": "Bienestar y salud",
+       "url_path": "productos-bienestar-salud",
+       "children": [
+        {
+         "uid": "ODEw",
+         "name": "Bienestar",
+         "url_path": "productos-bienestar-salud/bienestar"
+        },
+        {
+         "uid": "ODEx",
+         "name": "100% vegetal",
+         "url_path": "productos-bienestar-salud/cien-por-100-vegetal"
+        },
+        {
+         "uid": "OTQ2",
+         "name": "Garden Gourmet",
+         "url_path": "productos-bienestar-salud/garden-gourmet"
+        },
+        {
+         "uid": "MTAyMA==",
+         "name": "Loading",
+         "url_path": "productos-bienestar-salud/loading"
+        },
+        {
+         "uid": "MTA1Nw==",
+         "name": "Gerble",
+         "url_path": "productos-bienestar-salud/gerble"
+        },
+        {
+         "uid": "MTA2Mw==",
+         "name": "Barritas para el control del peso",
+         "url_path": "productos-bienestar-salud/barritas-para-el-control-del-peso"
+        },
+        {
+         "uid": "MTA4Mw==",
+         "name": "Activia",
+         "url_path": "productos-bienestar-salud/activia"
+        },
+        {
+         "uid": "MTEwMQ==",
+         "name": "Schar",
+         "url_path": "productos-bienestar-salud/schar"
+        },
+        {
+         "uid": "MTEwMg==",
+         "name": "VivePlus",
+         "url_path": "productos-bienestar-salud/viveplus"
+        },
+        {
+         "uid": "MTEwMw==",
+         "name": "Veggie",
+         "url_path": "productos-bienestar-salud/veggie"
+        }
+       ]
+      },
+      {
+       "uid": "ODMy",
+       "name": "Mercado de frescos",
+       "url_path": "mercado-de-frescos",
+       "children": [
+        {
+         "uid": "ODMz",
+         "name": "Temporada",
+         "url_path": "mercado-de-frescos/temporada"
+        },
+        {
+         "uid": "ODM0",
+         "name": "Novedades",
+         "url_path": "mercado-de-frescos/novedades"
+        },
+        {
+         "uid": "ODM1",
+         "name": "Frutería",
+         "url_path": "mercado-de-frescos/fruteria"
+        },
+        {
+         "uid": "ODM2",
+         "name": "Verduras",
+         "url_path": "mercado-de-frescos/verduras"
+        },
+        {
+         "uid": "ODM3",
+         "name": "Carnicería",
+         "url_path": "mercado-de-frescos/carniceria"
+        },
+        {
+         "uid": "ODM4",
+         "name": "Pollo, pavo y otras aves",
+         "url_path": "mercado-de-frescos/pollo-pavo-otras-aves"
+        },
+        {
+         "uid": "ODM5",
+         "name": "Pescados y mariscos",
+         "url_path": "mercado-de-frescos/pescados-mariscos"
+        },
+        {
+         "uid": "ODQw",
+         "name": "Charcutería",
+         "url_path": "mercado-de-frescos/charcuteria"
+        },
+        {
+         "uid": "ODQx",
+         "name": "Quesos",
+         "url_path": "mercado-de-frescos/quesos"
+        },
+        {
+         "uid": "ODQy",
+         "name": "Panadería y pastelería artesana",
+         "url_path": "mercado-de-frescos/panaderia-pasteleria-artesana"
+        },
+        {
+         "uid": "ODQz",
+         "name": "Huevos",
+         "url_path": "mercado-de-frescos/huevos"
+        },
+        {
+         "uid": "MTAwMA==",
+         "name": "Chirimoya",
+         "url_path": "mercado-de-frescos/chirimoya"
+        },
+        {
+         "uid": "MTAwNw==",
+         "name": "Jamones y paletas",
+         "url_path": "mercado-de-frescos/jamones-paletas"
+        },
+        {
+         "uid": "ODc1",
+         "name": "Especial Bacalao",
+         "url_path": "mercado-de-frescos/especial-bacalao"
+        },
+        {
+         "uid": "OTI3",
+         "name": "Temporada de atún",
+         "url_path": "mercado-de-frescos/temporada-de-atun"
+        },
+        {
+         "uid": "ODc0",
+         "name": "Jamones y quesos",
+         "url_path": "mercado-de-frescos/jamones-quesos"
+        },
+        {
+         "uid": "OTkw",
+         "name": "Especial ibéricos",
+         "url_path": "mercado-de-frescos/especial-ibericos"
+        },
+        {
+         "uid": "OTU1",
+         "name": "Tomate de Conil",
+         "url_path": "mercado-de-frescos/tomate-de-conil"
+        },
+        {
+         "uid": "OTU3",
+         "name": "Temporada de cerezas",
+         "url_path": "mercado-de-frescos/temporada-de-cerezas"
+        },
+        {
+         "uid": "MTAxNA==",
+         "name": "Quesos con DO",
+         "url_path": "mercado-de-frescos/quesos-con-do"
+        },
+        {
+         "uid": "MTAyMg==",
+         "name": "Especial carnes ibéricas",
+         "url_path": "mercado-de-frescos/especial-carnes-ibericas"
+        },
+        {
+         "uid": "MTA1MQ==",
+         "name": "Cocedero de marisco",
+         "url_path": "mercado-de-frescos/cocedero-de-marisco"
+        },
+        {
+         "uid": "MTA1NQ==",
+         "name": "Temporada de Naranja",
+         "url_path": "mercado-de-frescos/temporada-de-naranja"
+        },
+        {
+         "uid": "MTA2MA==",
+         "name": "Ibéricos Jabu",
+         "url_path": "mercado-de-frescos/ibericos-jabu"
+        },
+        {
+         "uid": "MTA2MQ==",
+         "name": "La carloteña",
+         "url_path": "mercado-de-frescos/la-carlotena"
+        },
+        {
+         "uid": "MTA3MQ==",
+         "name": "Ensaladas Florette",
+         "url_path": "mercado-de-frescos/ensaladas-florette"
+        },
+        {
+         "uid": "MTA3Mw==",
+         "name": "Pollo amarillo",
+         "url_path": "mercado-de-frescos/pollo-amarillo"
+        },
+        {
+         "uid": "MTA3Nw==",
+         "name": "Salmón",
+         "url_path": "mercado-de-frescos/salmon"
+        },
+        {
+         "uid": "MTA5Mw==",
+         "name": "Especial quesos",
+         "url_path": "mercado-de-frescos/especial-quesos"
+        },
+        {
+         "uid": "MTA5Nw==",
+         "name": "Temporada de fresas",
+         "url_path": "mercado-de-frescos/temporada-de-fresas"
+        },
+        {
+         "uid": "MTA5OQ==",
+         "name": "Quesos italianos",
+         "url_path": "mercado-de-frescos/quesos-italianos"
+        },
+        {
+         "uid": "MTEyNw==",
+         "name": "Especial revueltos",
+         "url_path": "mercado-de-frescos/especial-revueltos"
+        },
+        {
+         "uid": "MTE0Mg==",
+         "name": "La huerta de Conil",
+         "url_path": "mercado-de-frescos/la-huerta-de-conil"
+        },
+        {
+         "uid": "MTE0Mw==",
+         "name": "Quesos nacionales",
+         "url_path": "mercado-de-frescos/quesos-nacionales"
+        },
+        {
+         "uid": "OTY0",
+         "name": "Especial ensaladas",
+         "url_path": "mercado-de-frescos/especial-ensaladas"
+        },
+        {
+         "uid": "MTE1MQ==",
+         "name": "Frutas y verduras de temporada",
+         "url_path": "mercado-de-frescos/frutas-verduras-de-temporada"
+        },
+        {
+         "uid": "MTE2OA==",
+         "name": "Loncheados artesanales",
+         "url_path": "mercado-de-frescos/loncheados-artesanales"
+        },
+        {
+         "uid": "MTE3OA==",
+         "name": "Hamburguesa",
+         "url_path": "mercado-de-frescos/hamburguesa"
+        },
+        {
+         "uid": "MTE4OQ==",
+         "name": "Uvas sin pepitas",
+         "url_path": "mercado-de-frescos/uvas-sin-pepitas"
+        },
+        {
+         "uid": "MTE5OQ==",
+         "name": "Quesos de importación",
+         "url_path": "mercado-de-frescos/quesos-de-importacion"
+        },
+        {
+         "uid": "MTI0NA==",
+         "name": "Pavo",
+         "url_path": "mercado-de-frescos/pavo"
+        },
+        {
+         "uid": "MTI0Nw==",
+         "name": "Charcuterías y quesos de navidad",
+         "url_path": "mercado-de-frescos/charcuterias-quesos-de-navidad"
+        }
+       ]
+      },
+      {
+       "uid": "MTUwMA==",
+       "name": "Frescos de temporada",
+       "url_path": "frescos-de-temporada",
+       "children": []
+      },
+      {
+       "uid": "MTQyNA==",
+       "name": "Sin gluten",
+       "url_path": "sin-gluten",
+       "children": []
+      },
+      {
+       "uid": "MTQyNQ==",
+       "name": "Sin lactosa",
+       "url_path": "sin-lactosa",
+       "children": []
+      },
+      {
+       "uid": "MTI0Mg==",
+       "name": "Encargos en el supermercado",
+       "url_path": "encargos",
+       "children": []
+      },
+      {
+       "uid": "MTI3MA==",
+       "name": "Eco",
+       "url_path": "eco",
+       "children": []
+      },
+      {
+       "uid": "MTI3NA==",
+       "name": "Helados",
+       "url_path": "helado",
+       "children": []
+      },
+      {
+       "uid": "MTI2OQ==",
+       "name": "Veggies",
+       "url_path": "veggies",
+       "children": []
+      },
+      {
+       "uid": "MTI3Mw==",
+       "name": "Feria de Sevilla",
+       "url_path": "la-feria-en-casa",
+       "children": []
+      },
+      {
+       "uid": "MTA0Nw==",
+       "name": "Yogures alpro",
+       "url_path": "yogures-alpro",
+       "children": []
+      },
+      {
+       "uid": "MTI2NA==",
+       "name": "Recetas de semana santa",
+       "url_path": "recetas-de-semana-santa",
+       "children": []
+      },
+      {
+       "uid": "MTIzMg==",
+       "name": "Dulces navideños",
+       "url_path": "dulces-navidenos",
+       "children": []
+      },
+      {
+       "uid": "MTE1Ng==",
+       "name": "Buitoni",
+       "url_path": "buitoni",
+       "children": []
+      },
+      {
+       "uid": "OTk5",
+       "name": "Nestlé",
+       "url_path": "nestle",
+       "children": []
+      },
+      {
+       "uid": "MTAzNQ==",
+       "name": "Nestle Kit kat",
+       "url_path": "nestle-kit-kat",
+       "children": []
+      },
+      {
+       "uid": "MTI0NQ==",
+       "name": "Bombones Nestle",
+       "url_path": "bombones-nestle",
+       "children": []
+      },
+      {
+       "uid": "MTIwOQ==",
+       "name": "Nestle dark",
+       "url_path": "nestle-dark",
+       "children": []
+      },
+      {
+       "uid": "MTExMw==",
+       "name": "Nestle Extrafino",
+       "url_path": "nestle-extrafino",
+       "children": []
+      },
+      {
+       "uid": "MTIzMQ==",
+       "name": "Nestlé infantil",
+       "url_path": "nestle-infantil",
+       "children": []
+      },
+      {
+       "uid": "MTIyOQ==",
+       "name": "Chocolates Nestle",
+       "url_path": "chocolates-nestle",
+       "children": []
+      },
+      {
+       "uid": "OTg4",
+       "name": "Café de Starbucks",
+       "url_path": "cafe-starbucks",
+       "children": []
+      },
+      {
+       "uid": "MTE2OQ==",
+       "name": "Nesquik",
+       "url_path": "nesquik",
+       "children": []
+      },
+      {
+       "uid": "MTExNA==",
+       "name": "La lechera",
+       "url_path": "la-lechera",
+       "children": []
+      },
+      {
+       "uid": "MTE4OA==",
+       "name": "Agua aquarel",
+       "url_path": "agua-aquarel",
+       "children": []
+      },
+      {
+       "uid": "MTE3NA==",
+       "name": "Heineken",
+       "url_path": "heineken",
+       "children": []
+      },
+      {
+       "uid": "MTI1MQ==",
+       "name": "Cruzcampo",
+       "url_path": "cruzcampo",
+       "children": []
+      },
+      {
+       "uid": "MTE3Mw==",
+       "name": "Coca-Cola",
+       "url_path": "coca-cola",
+       "children": []
+      },
+      {
+       "uid": "MTI0Mw==",
+       "name": "Mini Coca - Cola",
+       "url_path": "mini-coca-cola",
+       "children": []
+      },
+      {
+       "uid": "MTIwNw==",
+       "name": "Fanta",
+       "url_path": "fanta",
+       "children": []
+      },
+      {
+       "uid": "MTE2NQ==",
+       "name": "Nuevos sabores Fanta",
+       "url_path": "nuevos-sabores-fanta",
+       "children": []
+      },
+      {
+       "uid": "MTIyNg==",
+       "name": "Knorr",
+       "url_path": "knorr",
+       "children": []
+      },
+      {
+       "uid": "MTE1Mg==",
+       "name": "Mimosín",
+       "url_path": "mimosin",
+       "children": []
+      },
+      {
+       "uid": "MTE1Mw==",
+       "name": "Ligeresa",
+       "url_path": "ligeresa",
+       "children": []
+      },
+      {
+       "uid": "MTE4NQ==",
+       "name": "Helados Magnum",
+       "url_path": "helados-magnum",
+       "children": []
+      },
+      {
+       "uid": "MTA3OA==",
+       "name": "Norit",
+       "url_path": "super",
+       "children": []
+      },
+      {
+       "uid": "MTA3OQ==",
+       "name": "Sanytol",
+       "url_path": "sanytol",
+       "children": []
+      },
+      {
+       "uid": "MTI0MQ==",
+       "name": "Puleva",
+       "url_path": "puleva",
+       "children": []
+      },
+      {
+       "uid": "OTYy",
+       "name": "Danone",
+       "url_path": "danone",
+       "children": []
+      },
+      {
+       "uid": "ODc5",
+       "name": "Sin categoría ERP",
+       "url_path": "sin-categoria-erp",
+       "children": []
+      },
+      {
+       "uid": "OTgy",
+       "name": "Royal Bliss",
+       "url_path": "royal-bliss",
+       "children": []
+      },
+      {
+       "uid": "OTg2",
+       "name": "Especial Oktoberfest",
+       "url_path": "especial-oktoberfest",
+       "children": []
+      },
+      {
+       "uid": "OTg3",
+       "name": "Presume de Frescos",
+       "url_path": "presume-de-frescos",
+       "children": []
+      },
+      {
+       "uid": "MTAwMw==",
+       "name": "Suchard",
+       "url_path": "suchard",
+       "children": []
+      },
+      {
+       "uid": "MTAxNQ==",
+       "name": "Chocolates y bombones",
+       "url_path": "chocolates-bombones",
+       "children": []
+      },
+      {
+       "uid": "OTk2",
+       "name": "Dove",
+       "url_path": "dove",
+       "children": []
+      },
+      {
+       "uid": "MTAzMw==",
+       "name": "Ultima",
+       "url_path": "ultima",
+       "children": []
+      },
+      {
+       "uid": "MTA3Mg==",
+       "name": "Leche fresca y bebidas vegetales",
+       "url_path": "leche-fresca-bebidas-vegetales",
+       "children": []
+      },
+      {
+       "uid": "MTA3NQ==",
+       "name": "Panadería y pastelería",
+       "url_path": "panaderia-pasteleria",
+       "children": []
+      },
+      {
+       "uid": "MTA5NQ==",
+       "name": "Experiencias Club MAS",
+       "url_path": "experiencias-club-mas",
+       "children": []
+      },
+      {
+       "uid": "MTA5OA==",
+       "name": "Platos preparados",
+       "url_path": "platos-preparados",
+       "children": []
+      },
+      {
+       "uid": "MTEwNQ==",
+       "name": "Exclusivo Club MAS",
+       "url_path": "exclusivo-club-mas",
+       "children": []
+      },
+      {
+       "uid": "MTEwOQ==",
+       "name": "Snacks ",
+       "url_path": "snacks",
+       "children": []
+      },
+      {
+       "uid": "MTExMA==",
+       "name": "Higiene ",
+       "url_path": "higiene",
+       "children": []
+      },
+      {
+       "uid": "MTExMQ==",
+       "name": "Alimentación saludable para gatos",
+       "url_path": "alimentacion-saludable-para-gatos",
+       "children": []
+      },
+      {
+       "uid": "MTExMg==",
+       "name": "Alimentación saludable para perros",
+       "url_path": "alimentacion-saludable-para-perros",
+       "children": []
+      },
+      {
+       "uid": "MTEzMA==",
+       "name": "Limpieza y desinfección",
+       "url_path": "limpieza-desinfeccion",
+       "children": []
+      },
+      {
+       "uid": "MTEzNg==",
+       "name": "Especial Cervezas",
+       "url_path": "especial-cervezas",
+       "children": []
+      },
+      {
+       "uid": "MTE0NA==",
+       "name": "Brekkies",
+       "url_path": "brekkies",
+       "children": []
+      },
+      {
+       "uid": "MTE1MA==",
+       "name": "Precios bajos, calidad MAS",
+       "url_path": "precios-bajos-calidad-mas",
+       "children": []
+      },
+      {
+       "uid": "MTE1NQ==",
+       "name": "Cereales Nestle",
+       "url_path": "cereales-nestle",
+       "children": []
+      },
+      {
+       "uid": "MTE1Nw==",
+       "name": "Ofertas y precios bajos",
+       "url_path": "ofertas-precios-bajos",
+       "children": []
+      },
+      {
+       "uid": "MTE2NA==",
+       "name": "Magnum double",
+       "url_path": "magnum-double",
+       "children": []
+      },
+      {
+       "uid": "MTE2Nw==",
+       "name": "Felix ",
+       "url_path": "felix",
+       "children": []
+      },
+      {
+       "uid": "MTE3NQ==",
+       "name": "Tena",
+       "url_path": "tena",
+       "children": []
+      },
+      {
+       "uid": "MTIwNQ==",
+       "name": "Cupones Club MAS",
+       "url_path": "cupones-club-mas",
+       "children": []
+      },
+      {
+       "uid": "MTIxMA==",
+       "name": "KH-7",
+       "url_path": "kh-7",
+       "children": []
+      },
+      {
+       "uid": "MTI2Ng==",
+       "name": "Dolce Gusto",
+       "url_path": "dolce-gusto",
+       "children": []
+      },
+      {
+       "uid": "MTI2Nw==",
+       "name": "Café Farmers Origins",
+       "url_path": "cafe-farmers-origins",
+       "children": []
+      },
+      {
+       "uid": "MTI3NQ==",
+       "name": "Hellmann's",
+       "url_path": "hellmann-s",
+       "children": []
+      },
+      {
+       "uid": "MTI3Ng==",
+       "name": "Calvé",
+       "url_path": "calve",
+       "children": []
+      },
+      {
+       "uid": "MTI3Nw==",
+       "name": "Solís",
+       "url_path": "solis",
+       "children": []
+      },
+      {
+       "uid": "MTI3OA==",
+       "name": "Bebidas para el verano",
+       "url_path": "bebidas-para-el-verano",
+       "children": []
+      },
+      {
+       "uid": "MTI3OQ==",
+       "name": "Alvalle",
+       "url_path": "alvalle",
+       "children": []
+      },
+      {
+       "uid": "MTI4MQ==",
+       "name": "Covap",
+       "url_path": "covap",
+       "children": []
+      },
+      {
+       "uid": "MTI4Mw==",
+       "name": "Bifrutas",
+       "url_path": "bifrutas",
+       "children": []
+      },
+      {
+       "uid": "MTI4OA==",
+       "name": "Frigo",
+       "url_path": "frigo",
+       "children": []
+      },
+      {
+       "uid": "MTI4OQ==",
+       "name": "Perrier",
+       "url_path": "perrier",
+       "children": []
+      },
+      {
+       "uid": "MTI5MQ==",
+       "name": "Aquarius",
+       "url_path": "aquarius",
+       "children": []
+      },
+      {
+       "uid": "MTI5Mg==",
+       "name": "Ben&Jerry's",
+       "url_path": "ben-jerry-s",
+       "children": []
+      },
+      {
+       "uid": "MTI5Mw==",
+       "name": "Red bull",
+       "url_path": "red-bull",
+       "children": []
+      },
+      {
+       "uid": "MTI5NA==",
+       "name": "Nescafe",
+       "url_path": "nescafe",
+       "children": []
+      },
+      {
+       "uid": "MTI5NQ==",
+       "name": "Skip y Mimosín",
+       "url_path": "skip-y-mimosin",
+       "children": []
+      },
+      {
+       "uid": "MTI5Nw==",
+       "name": "Aceite",
+       "url_path": "aceite",
+       "children": []
+      },
+      {
+       "uid": "MTI5OA==",
+       "name": "Danonino",
+       "url_path": "danonino",
+       "children": []
+      },
+      {
+       "uid": "MTI5OQ==",
+       "name": "Campofrio",
+       "url_path": "campofrio",
+       "children": []
+      },
+      {
+       "uid": "MTMwMA==",
+       "name": "Bombay",
+       "url_path": "bombay",
+       "children": []
+      },
+      {
+       "uid": "MTMwNg==",
+       "name": "Schweppes",
+       "url_path": "schweppes",
+       "children": []
+      },
+      {
+       "uid": "MTQ0Nw==",
+       "name": "Heinz",
+       "url_path": "heinz",
+       "children": []
+      },
+      {
+       "uid": "MTMwNw==",
+       "name": "Litoral",
+       "url_path": "litoral",
+       "children": []
+      },
+      {
+       "uid": "MTMwOA==",
+       "name": "Dewar's ",
+       "url_path": "dewar-s",
+       "children": []
+      },
+      {
+       "uid": "MTMxMA==",
+       "name": "Productos ifa",
+       "url_path": "la-ilusion-de-volver-a-regalar",
+       "children": []
+      },
+      {
+       "uid": "MTMxMQ==",
+       "name": "Realfooding",
+       "url_path": "realfooding",
+       "children": []
+      },
+      {
+       "uid": "MTMxMg==",
+       "name": "Bacardi",
+       "url_path": "bacardi",
+       "children": []
+      },
+      {
+       "uid": "MTMxMw==",
+       "name": "Martini",
+       "url_path": "martini",
+       "children": []
+      },
+      {
+       "uid": "MTMxNA==",
+       "name": "Carte d'or",
+       "url_path": "carte-d-or",
+       "children": []
+      },
+      {
+       "uid": "MTMxNw==",
+       "name": "donuts",
+       "url_path": "donuts",
+       "children": []
+      },
+      {
+       "uid": "MTMxNg==",
+       "name": "Bimbo",
+       "url_path": "bimbo",
+       "children": []
+      },
+      {
+       "uid": "MTMxOQ==",
+       "name": "Zumo recien exprimido",
+       "url_path": "zumo-recien-exprimido",
+       "children": []
+      },
+      {
+       "uid": "MTMyNA==",
+       "name": "Dodot",
+       "url_path": "dodot",
+       "children": []
+      },
+      {
+       "uid": "MTMyNg==",
+       "name": "Nestle jungly",
+       "url_path": "nestle-jungly",
+       "children": []
+      },
+      {
+       "uid": "MTMyOA==",
+       "name": "cerveza damm",
+       "url_path": "cerveza-damm",
+       "children": []
+      },
+      {
+       "uid": "MTMzNA==",
+       "name": "Día del padre",
+       "url_path": "dia-del-padre",
+       "children": []
+      },
+      {
+       "uid": "MTMzNw==",
+       "name": "Quesos internacionales",
+       "url_path": "quesos-internacionales",
+       "children": []
+      },
+      {
+       "uid": "MTM0MQ==",
+       "name": "Chocolate nestle postre",
+       "url_path": "chocolate-nestle-postre",
+       "children": []
+      },
+      {
+       "uid": "MTM0Mw==",
+       "name": "Cerveza victoria",
+       "url_path": "cerveza-victoria",
+       "children": []
+      },
+      {
+       "uid": "MTM0OA==",
+       "name": "Garcia millan",
+       "url_path": "garcia-millan",
+       "children": []
+      },
+      {
+       "uid": "MTM1Mw==",
+       "name": "Viñafiel",
+       "url_path": "vinafiel",
+       "children": []
+      },
+      {
+       "uid": "MTM1NQ==",
+       "name": "Cafe lor",
+       "url_path": "cafe-lor",
+       "children": []
+      },
+      {
+       "uid": "MTM1Nw==",
+       "name": "tinto de verano",
+       "url_path": "tinto-de-verano",
+       "children": []
+      },
+      {
+       "uid": "MTM1OA==",
+       "name": "Calvo",
+       "url_path": "calvo",
+       "children": []
+      },
+      {
+       "uid": "MTM1OQ==",
+       "name": "Purina",
+       "url_path": "purina",
+       "children": []
+      },
+      {
+       "uid": "MTM2MQ==",
+       "name": "Granini",
+       "url_path": "granini",
+       "children": []
+      },
+      {
+       "uid": "MTM2NA==",
+       "name": "La casera",
+       "url_path": "la-casera",
+       "children": []
+      },
+      {
+       "uid": "MTM2Ng==",
+       "name": "Sprite",
+       "url_path": "sprite",
+       "children": []
+      },
+      {
+       "uid": "MTM2Nw==",
+       "name": "Oktober fest",
+       "url_path": "oktober-fest",
+       "children": []
+      },
+      {
+       "uid": "MTM3MA==",
+       "name": "Cafe lor grano",
+       "url_path": "cafe-lor-grano",
+       "children": []
+      },
+      {
+       "uid": "MTM3Mg==",
+       "name": "Aceite coosol",
+       "url_path": "aceite-coosol",
+       "children": []
+      },
+      {
+       "uid": "MTM3NQ==",
+       "name": "Coosur",
+       "url_path": "coosur",
+       "children": []
+      },
+      {
+       "uid": "MTM4MQ==",
+       "name": "Productos proteicos",
+       "url_path": "productos-proteicos",
+       "children": []
+      },
+      {
+       "uid": "MTM4Mw==",
+       "name": "Actimel",
+       "url_path": "actimel",
+       "children": []
+      },
+      {
+       "uid": "MTM4NA==",
+       "name": "Saimaza ",
+       "url_path": "saimaza",
+       "children": []
+      },
+      {
+       "uid": "MTM4Ng==",
+       "name": "Parodontax",
+       "url_path": "parodontax",
+       "children": []
+      },
+      {
+       "uid": "MTM4Nw==",
+       "name": "Monster",
+       "url_path": "monster",
+       "children": []
+      },
+      {
+       "uid": "MTM4OA==",
+       "name": "Ifa sabe",
+       "url_path": "ifa-sabe",
+       "children": []
+      },
+      {
+       "uid": "MTM4OQ==",
+       "name": "Colacao",
+       "url_path": "colacao",
+       "children": []
+      },
+      {
+       "uid": "MTM5MA==",
+       "name": "Fuze tea",
+       "url_path": "fuze-tea",
+       "children": []
+      },
+      {
+       "uid": "MTM5MQ==",
+       "name": "Sensodyne",
+       "url_path": "sensodyne",
+       "children": []
+      },
+      {
+       "uid": "MTM5Mg==",
+       "name": "Garden Gourmet",
+       "url_path": "garden-gourmet",
+       "children": []
+      },
+      {
+       "uid": "MTM5Mw==",
+       "name": "Kombucha",
+       "url_path": "kombucha",
+       "children": []
+      },
+      {
+       "uid": "MTM5Nw==",
+       "name": "Ofertas",
+       "url_path": "ofertas",
+       "children": [
+        {
+         "uid": "MTQwMg==",
+         "name": "2ª al 50%",
+         "url_path": "ofertas/ofertas-2-ud-dto50"
+        },
+        {
+         "uid": "MTQxMQ==",
+         "name": "2X1",
+         "url_path": "ofertas/ofertas-2-x-1"
+        },
+        {
+         "uid": "MTQxMw==",
+         "name": "3X2",
+         "url_path": "ofertas/ofertas-3-x-2"
+        },
+        {
+         "uid": "MTQyMQ==",
+         "name": "2ª al 70%",
+         "url_path": "ofertas/ofertas-2-ud-dto70"
+        },
+        {
+         "uid": "MTQzMg==",
+         "name": "Ofertas precio",
+         "url_path": "ofertas/todas-ofertas"
+        },
+        {
+         "uid": "MTI5MA==",
+         "name": "Todas las ofertas",
+         "url_path": "ofertas/ofertas-semanales"
+        }
+       ]
+      },
+      {
+       "uid": "MTQyMw==",
+       "name": "Asevi",
+       "url_path": "asevi",
+       "children": []
+      },
+      {
+       "uid": "MTQyNg==",
+       "name": "Tostas ortiz",
+       "url_path": "tostas-ortiz",
+       "children": []
+      },
+      {
+       "uid": "MTQyNw==",
+       "name": "Larios",
+       "url_path": "larios",
+       "children": []
+      },
+      {
+       "uid": "MTQyOA==",
+       "name": "Takis",
+       "url_path": "takis",
+       "children": []
+      },
+      {
+       "uid": "MTQyOQ==",
+       "name": "La vieja fabrica",
+       "url_path": "la-vieja-fabrica",
+       "children": []
+      },
+      {
+       "uid": "MTQzMQ==",
+       "name": "Productos aniversario",
+       "url_path": "productos-aniversario",
+       "children": []
+      },
+      {
+       "uid": "MTQzMw==",
+       "name": "Nenuco",
+       "url_path": "nenuco",
+       "children": []
+      },
+      {
+       "uid": "MTQzNQ==",
+       "name": "Carbonell",
+       "url_path": "carbonell",
+       "children": []
+      },
+      {
+       "uid": "MTQzNg==",
+       "name": "yogolino",
+       "url_path": "yogolino",
+       "children": []
+      },
+      {
+       "uid": "MTQzNw==",
+       "name": "San pellegrino",
+       "url_path": "san-pellegrino",
+       "children": []
+      },
+      {
+       "uid": "MTQ0OA==",
+       "name": "La española",
+       "url_path": "la-espanola",
+       "children": []
+      },
+      {
+       "uid": "MTQ0OQ==",
+       "name": "Mondelez",
+       "url_path": "mondelez",
+       "children": []
+      },
+      {
+       "uid": "MTQ1MA==",
+       "name": "Kefir",
+       "url_path": "kefir",
+       "children": []
+      },
+      {
+       "uid": "MTQ1MQ==",
+       "name": "Kefir liquido",
+       "url_path": "kefir-liquido",
+       "children": []
+      },
+      {
+       "uid": "MTQ1Mg==",
+       "name": "Ines rosales",
+       "url_path": "ines-rosales",
+       "children": []
+      },
+      {
+       "uid": "MTQ1NA==",
+       "name": "Unilever",
+       "url_path": "unilever",
+       "children": []
+      },
+      {
+       "uid": "MTQ1Ng==",
+       "name": "pantene",
+       "url_path": "pantene",
+       "children": []
+      },
+      {
+       "uid": "MTQ2Mg==",
+       "name": "Productos Saludables",
+       "url_path": "productos-saludables",
+       "children": []
+      },
+      {
+       "uid": "MTQ2Mw==",
+       "name": "Henkel",
+       "url_path": "henkel",
+       "children": []
+      },
+      {
+       "uid": "MTQ2NA==",
+       "name": "Fuze Tea & Fanta",
+       "url_path": "fuze-tea-fanta",
+       "children": []
+      },
+      {
+       "uid": "MTQ4MA==",
+       "name": "Maggi",
+       "url_path": "maggi",
+       "children": []
+      },
+      {
+       "uid": "MTQ4MQ==",
+       "name": "Susaron",
+       "url_path": "susaron",
+       "children": []
+      },
+      {
+       "uid": "MTQ4NA==",
+       "name": "Varma",
+       "url_path": "varma",
+       "children": []
+      },
+      {
+       "uid": "MTQ4NQ==",
+       "name": "Bezoya",
+       "url_path": "bezoya",
+       "children": []
+      },
+      {
+       "uid": "MTQ4Ng==",
+       "name": "La casa",
+       "url_path": "la-casa",
+       "children": []
+      },
+      {
+       "uid": "MTQ4Nw==",
+       "name": "Lipton",
+       "url_path": "lipton",
+       "children": []
+      },
+      {
+       "uid": "MTQ4OA==",
+       "name": "Milka",
+       "url_path": "milka",
+       "children": []
+      },
+      {
+       "uid": "MTQ5MQ==",
+       "name": "Fontaneda",
+       "url_path": "fontaneda",
+       "children": []
+      },
+      {
+       "uid": "MTQ5MA==",
+       "name": "2x3€",
+       "url_path": "2x3",
+       "children": []
+      },
+      {
+       "uid": "MTQ5Mg==",
+       "name": "Font Vella",
+       "url_path": "font-vella",
+       "children": []
+      },
+      {
+       "uid": "MTQ5Mw==",
+       "name": "Risi",
+       "url_path": "risi",
+       "children": []
+      },
+      {
+       "uid": "MTQ5NA==",
+       "name": "Oleostepa",
+       "url_path": "oleostepa",
+       "children": []
+      },
+      {
+       "uid": "MTQ5NQ==",
+       "name": "2x1€",
+       "url_path": "2x1",
+       "children": []
+      },
+      {
+       "uid": "MTQ5Ng==",
+       "name": "Majao",
+       "url_path": "majao",
+       "children": []
+      },
+      {
+       "uid": "MTQ5Nw==",
+       "name": "Colgate",
+       "url_path": "colgate",
+       "children": []
+      },
+      {
+       "uid": "MTQ5OQ==",
+       "name": "Especial vinos",
+       "url_path": "especial-vinos",
+       "children": []
+      }
+     ]
+    }
+   ]
+  }
+ }
+}

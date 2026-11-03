@@ -1,0 +1,149 @@
+{% extends "base.html" %}
+{% import "_macros.html" as ui with context %}
+
+{% block title %}Compras{% endblock %}
+
+{% block content %}
+<div class="page">
+  <header class="page-head">
+    <div>
+      <h1>Compras</h1>
+      <p class="page-lede">Tus tickets de supermercado, con el desglose de cada compra.</p>
+    </div>
+    <a class="btn btn--primary" href="{{ url_for('nuevo_page') }}">Añadir ticket</a>
+  </header>
+
+  {% if notice %}
+  <p class="notice" role="status">{{ notice }}</p>
+  {% endif %}
+
+  <form class="month-filter" method="get" action="{{ url_for('index') }}">
+    <div class="field">
+      <label class="field__label" for="mes">Mes</label>
+      <select class="field__input" id="mes" name="mes">
+        {% for option in options %}
+        <option value="{{ option.value }}"{% if option.value == month %} selected{% endif %}>{{ option.label }}</option>
+        {% endfor %}
+      </select>
+    </div>
+    <button class="btn btn--primary" type="submit">Ver</button>
+  </form>
+
+  {% if not has_any %}
+  <section class="empty" aria-labelledby="empty-title">
+    <h2 id="empty-title">Todavía no hay compras</h2>
+    <p>Añade un ticket desde el PDF que te dio la tienda y verás aquí su desglose de productos.</p>
+    <p>Para comparar precios entre supermercados, descarga antes los catálogos con la herramienta de línea de comandos.</p>
+    <p><a class="btn btn--primary" href="{{ url_for('nuevo_page') }}">Añadir ticket</a></p>
+  </section>
+  {% else %}
+  <section class="panel" aria-labelledby="resumen-title">
+    <h2 class="section-title" id="resumen-title">{{ month_label }}</h2>
+    <dl class="stats">
+      <div class="stat">
+        <dt class="stat__label">Gasto</dt>
+        <dd class="stat__value amount">{{ summary.total }}</dd>
+      </div>
+      <div class="stat">
+        <dt class="stat__label">Compras</dt>
+        <dd class="stat__value amount">{{ summary.count }}</dd>
+      </div>
+      <div class="stat">
+        <dt class="stat__label">Media por compra</dt>
+        <dd class="stat__value amount">{{ summary.average }}</dd>
+      </div>
+    </dl>
+
+    {% if summary.by_chain %}
+    <h2 class="section-title">Gasto por supermercado</h2>
+    <ul class="chain-list">
+      {% for item in summary.by_chain %}
+      <li class="chain-item">
+        {{ ui.chain_logo(item.chain, item.logo) }}
+        <span class="chain-item__name">{{ item.chain }}</span>
+        <span class="chain-item__amount amount">{{ item.amount }}</span>
+      </li>
+      {% endfor %}
+    </ul>
+    {% endif %}
+  </section>
+  {% if tickets %}
+  <section aria-labelledby="historial-title">
+    <h2 class="section-title" id="historial-title">Historial</h2>
+    <ul class="ticket-list">
+      {% for ticket in tickets %}
+      <li>
+        <a class="ticket-row" href="{{ url_for('ticket_page', ticket_id=ticket.id) }}">
+          <span class="ticket-row__main">
+            {{ ui.chain_logo(ticket.chain, ticket.logo) }}
+            <span class="ticket-row__text">
+              <span class="ticket-row__chain">{{ ticket.chain }}</span>
+              <time class="ticket-row__date" datetime="{{ ticket.iso }}">{{ ticket.datetime or '—' }}</time>
+            </span>
+          </span>
+          <span class="ticket-row__amount amount">{{ ticket.amount }}</span>
+          <span class="ticket-row__cta">Ver detalle</span>
+        </a>
+      </li>
+      {% endfor %}
+    </ul>
+  </section>
+  {% else %}
+  <section class="empty" aria-labelledby="empty-month-title">
+    <h2 id="empty-month-title">No hay compras en {{ month_label }}</h2>
+    <p>Prueba con otro mes o consulta <em>Todo el histórico</em>.</p>
+  </section>
+  {% endif %}
+  <section class="rank-section" aria-labelledby="top-title">
+    <h2 class="section-title" id="top-title">Los que más compras</h2>
+    {% if top %}
+    <p class="section-lede">De todo tu histórico: cuántas veces has comprado cada producto y cada cuánto vuelve.</p>
+    <ul class="top-list">
+      {% for item in top %}
+      <li>
+        <a class="top-item" href="/productos/{{ item.product_id }}">
+          <span class="top-item__head">
+            <span class="rank-item__name">{{ item.name }}</span>
+            <span class="rank-item__chain">{{ item.chain }}</span>
+          </span>
+          <span class="top-item__facts">
+            <span class="top-item__times">{{ item.times }} {% if item.times == 1 %}vez{% else %}veces{% endif %}</span>
+            <span class="top-item__units amount">{{ item.units_text }}</span>
+            {% if item.frequency %}
+            <span class="top-item__frequency">{{ item.frequency }}</span>
+            {% else %}
+            <span class="top-item__frequency muted">una sola vez</span>
+            {% endif %}
+            <span class="top-item__last muted">última: <time datetime="{{ item.last_iso }}">{{ item.last_date }}</time></span>
+          </span>
+        </a>
+      </li>
+      {% endfor %}
+    </ul>
+    {% else %}
+    <p class="muted rank__empty">Todavía no hay compras con productos identificados, así que no hay frecuencia que calcular.</p>
+    {% endif %}
+  </section>
+  <section class="rank-section" aria-labelledby="cambios-title">
+    <h2 class="section-title" id="cambios-title">Cambios de precio</h2>
+    {% if changes.month and changes.compared %}
+    <p class="section-lede">Los productos que compraste en {{ changes.month_label }}, ordenados por lo que han cambiado desde tu primera compra de cada uno.</p>
+    <div class="rank-lists">
+      {{ ui.rank_list(
+        "Se han encarecido",
+        changes.risers,
+        "Ningún producto de los que compraste en " ~ changes.month_label ~ " se ha encarecido desde su primera compra.",
+      ) }}
+      {{ ui.rank_list(
+        "Han bajado",
+        changes.fallers,
+        "Ningún producto de los que compraste en " ~ changes.month_label ~ " ha bajado de precio desde su primera compra.",
+      ) }}
+    </div>
+    {% else %}
+    <p class="muted rank__empty">Todavía no hay dos compras del mismo producto{% if changes.month %} en {{ changes.month_label }}{% endif %}, así que no se puede comparar ningún precio.</p>
+    {% endif %}
+  </section>
+  {% endif %}
+</div>
+{% endblock %}

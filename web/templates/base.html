@@ -1,0 +1,50 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="color-scheme" content="light dark">
+  <title>{% block title %}Compras{% endblock %}</title>
+  <script>
+    // Apply the stored theme before the first paint, so a dark reload never flashes white.
+    (function () {
+      try {
+        var choice = localStorage.getItem("tema");
+        if (choice === "dark" || choice === "light") {
+          document.documentElement.setAttribute("data-theme", choice);
+        }
+      } catch (e) {}
+    })();
+  </script>
+  <link rel="stylesheet" href="{{ url_for('static', path='styles.css') }}">
+  <script src="{{ url_for('static', path='theme.js') }}" defer></script>
+</head>
+<body>
+  <a class="skip-link" href="#contenido">Saltar al contenido</a>
+  <header class="topbar">
+    <div class="topbar__inner">
+      <fieldset class="theme" aria-label="Tema">
+        <div class="theme__options">
+          <label class="theme__option">
+            <input class="theme__input" type="radio" name="tema" value="light" aria-label="Tema claro">
+            {# One SVG, recoloured and filled by state: outline is the default, fill marks the active one. #}
+            <svg class="theme__icon" viewBox="0 0 24 24" width="20" height="20" aria-hidden="true" focusable="false">
+              <circle class="theme__icon-shape" cx="12" cy="12" r="4.25"/>
+              <path d="M12 2.6v2.1M12 19.3v2.1M2.6 12h2.1M19.3 12h2.1M5.4 5.4l1.5 1.5M17.1 17.1l1.5 1.5M18.6 5.4l-1.5 1.5M6.9 17.1l-1.5 1.5"/>
+            </svg>
+          </label>
+          <label class="theme__option">
+            <input class="theme__input" type="radio" name="tema" value="dark" aria-label="Tema oscuro">
+            <svg class="theme__icon" viewBox="0 0 24 24" width="20" height="20" aria-hidden="true" focusable="false">
+              <path class="theme__icon-shape" d="M20.5 14.6A8.6 8.6 0 0 1 9.4 3.5a8.6 8.6 0 1 0 11.1 11.1z"/>
+            </svg>
+          </label>
+        </div>
+      </fieldset>
+    </div>
+  </header>
+  <main id="contenido" tabindex="-1">
+    {% block content %}{% endblock %}
+  </main>
+</body>
+</html>
