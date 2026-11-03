@@ -1,4 +1,5 @@
-# Compras — grocery ticket tracker. Image for a single-user host behind a reverse proxy (LAN).
+# Tus tickets de Compra — grocery ticket tracker. Image for a single-user host behind a reverse
+# proxy (LAN).
 #
 #   cd /opt/compras && docker compose build && docker compose up -d
 #   http://<host>:8130
